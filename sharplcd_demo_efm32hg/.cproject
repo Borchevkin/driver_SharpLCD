@@ -179,7 +179,7 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
 	</storageModule>
-	<storageModule moduleId="com.silabs.ss.framework.ide.project.core.cpp" project.generation="48" projectCommon.boardIds="brd2012a:0.0.0.B01" projectCommon.buildArtifactType="EXE" projectCommon.importModeId="COPY" projectCommon.partId="mcu.arm.efm32.hg.efm32hg322f64" projectCommon.sdkId="com.silabs.sdk.stack.super:1.1.1._310456152"/>
+	<storageModule moduleId="com.silabs.ss.framework.ide.project.core.cpp" project.generation="55" projectCommon.boardIds="brd2012a:0.0.0.B01" projectCommon.buildArtifactType="EXE" projectCommon.importModeId="COPY" projectCommon.partId="mcu.arm.efm32.hg.efm32hg322f64" projectCommon.sdkId="com.silabs.sdk.stack.super:1.1.1._310456152"/>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="sharplcd_demo_efm32hg.com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType.585603214" name="SLS CDT Project" projectType="com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType"/>
 	</storageModule>

@@ -14,7 +14,7 @@ volatile uint32_t systime = 0;
 /* Prototypes section */
 void TEST_SpiConnection();
 void TEST_DisplayLine();
-void TEST_DisplayCircle();
+void TEST_DisplayRect();
 void TEST_DisplayText(char * text, uint8_t len);
 
 /* Main Section */
@@ -26,12 +26,14 @@ int main(void)
 	/* Apply Configurator routines */
 	enter_DefaultMode_from_RESET();
 
-	/* Init section */
-	//Init Systick with interrupt every 1 ms
+	/*---------------------- Init section-------------------------- */
+	/* Init Systick with interrupt every 1 ms*/
 	if (SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000))
 	{
 		_ErrorHandler();
 	}
+
+	/* ------------------------------------------------------------ */
 
 	/* Infinite loop */
 	while (1)
@@ -54,7 +56,8 @@ void SysTick_Handler(void)
 /* Test Sections */
 void TEST_SpiConnection()
 {
-
+	uint8_t testPacket[4] = {0x11, 0x22, 0x33, 0x44};
+	SPI0_SendPacket((uint8_t *)testPacket, 4);
 }
 
 void TEST_DisplayLine()
@@ -62,7 +65,7 @@ void TEST_DisplayLine()
 
 }
 
-void TEST_DisplayCircle()
+void TEST_DisplayRect()
 {
 
 }
