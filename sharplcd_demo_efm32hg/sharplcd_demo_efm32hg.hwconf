@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" name="EFM32HG322F64" partId="mcu.arm.efm32.hg.efm32hg322f64">
+  <mode name="DefaultMode">
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="GPIO" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PB7" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PC0" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PC1" propertyId="ports.settings.pinmode" value="Input"/>
+    <property object="PD4" propertyId="ports.settings.custompinname" value="SHARPLCD_DISP"/>
+    <property object="PD4" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PD5" propertyId="ports.settings.custompinname" value="SHARPLCD_VCOM"/>
+    <property object="PD5" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PE10" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PE11" propertyId="ports.settings.pinmode" value="Input"/>
+    <property object="PE12" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PE13" propertyId="ports.settings.custompinname" value="SHARPLCD_CS"/>
+    <property object="PE13" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PF3" propertyId="ports.settings.custompinname" value="LED1"/>
+    <property object="PF4" propertyId="ports.settings.custompinname" value="LED0"/>
+    <property object="PF4" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.clk" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.rx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.tx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart1.enable.clk" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart1.enable.rx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart1.enable.tx" value="Enabled"/>
+    <property object="USART0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="USART0" propertyId="usart.mode.usartmode" value="Synchronous Mode (SPI / I2S)"/>
+    <property object="USART0" propertyId="usart.synchronoussettings.mostsignificantbitfirst" value="Disabled"/>
+    <property object="USART1" propertyId="usart.mode.usartmode" value="Synchronous Mode (SPI / I2S)"/>
+    <property object="USART1" propertyId="usart.synchronoussettings.mostsignificantbitfirst" value="Disabled"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+  </modeTransition>
+</device:XMLDevice>
