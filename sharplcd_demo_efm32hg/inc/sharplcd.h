@@ -33,6 +33,8 @@ typedef struct {
 	uint16_t bytesPerLine;
 	uint16_t bufferSize;
 
+	/* Last vaules */
+
 	/* Pointers to functions */
 	void (*Write)(uint8_t * pData, uint16_t * len);
 	void (*SetCS)(void);
@@ -53,6 +55,9 @@ typedef struct {
 
 void SHARPLCD_Init(sharplcd_t * sharplcd);
 void SHARPLCD_Clear(sharplcd_t * sharplcd);
+void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd);
+void SHARPLCD_SendTrailer(sharplcd_t * sharplcd);
+void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray);
 void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame);
 /* --------------------------------------------------- */
 
