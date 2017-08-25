@@ -1,0 +1,427 @@
+!SESSION 2017-08-24 10:16:54.055 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\LocalProject\SHARP96\driver_SharpLCD
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-24 10:17:01.070
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.platform.analytics.core 1 0 2017-08-24 10:17:02.886
+!MESSAGE Creating log directoryC:\LocalProject\SHARP96\driver_SharpLCD\outgoing
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-24 10:17:17.692
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.simpleRepository
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.Mapper.initialize(Mapper.java:45)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.initializeMapper(SimpleArtifactRepository.java:1035)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.initializeAfterLoad(SimpleArtifactRepository.java:1016)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.initializeAfterLoad(SimpleArtifactRepository.java:1009)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:109)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:76)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:203)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:108)
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.ensureStudioReposLoaded(SLSP2UpdateSites.java:582)
+	at com.silabs.ss.platform.internal.installer.core.scripting.SLSInstallerModule.updateInstallationMetadata(SLSInstallerModule.java:470)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:202)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-24 10:17:17.778
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.compositeRepository
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.getLocalFile(CompositeArtifactRepositoryFactory.java:49)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:91)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:203)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:108)
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.ensureStudioReposLoaded(SLSP2UpdateSites.java:582)
+	at com.silabs.ss.platform.internal.installer.core.scripting.SLSInstallerModule.updateInstallationMetadata(SLSInstallerModule.java:470)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:202)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<clinit>(CompositeArtifactRepository.java:43)
+	... 14 more
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-24 10:17:18.068
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.updatesite.artifactRepository
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.getLocalRepositoryLocation(UpdateSiteMetadataRepositoryFactory.java:36)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.loadRepository(UpdateSiteArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.load(UpdateSiteArtifactRepositoryFactory.java:60)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:203)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:108)
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.ensureStudioReposLoaded(SLSP2UpdateSites.java:582)
+	at com.silabs.ss.platform.internal.installer.core.scripting.SLSInstallerModule.updateInstallationMetadata(SLSInstallerModule.java:470)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:202)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-24 10:17:18.076
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.simpleRepository
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryIO.getLockLocation(SimpleArtifactRepositoryIO.java:183)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryIO.canLock(SimpleArtifactRepositoryIO.java:137)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryIO.read(SimpleArtifactRepositoryIO.java:92)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:108)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:76)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.restoreSpecialRepositories(ArtifactRepositoryManager.java:127)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1014)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.removeRepository(AbstractRepositoryManager.java:928)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:684)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:203)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:108)
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.ensureStudioReposLoaded(SLSP2UpdateSites.java:582)
+	at com.silabs.ss.platform.internal.installer.core.scripting.SLSInstallerModule.updateInstallationMetadata(SLSInstallerModule.java:470)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:202)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-24 10:17:18.082
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.compositeRepository
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.getLocalFile(CompositeArtifactRepositoryFactory.java:49)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:91)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.restoreSpecialRepositories(ArtifactRepositoryManager.java:127)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1014)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.removeRepository(AbstractRepositoryManager.java:928)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:684)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:203)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:108)
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.ensureStudioReposLoaded(SLSP2UpdateSites.java:582)
+	at com.silabs.ss.platform.internal.installer.core.scripting.SLSInstallerModule.updateInstallationMetadata(SLSInstallerModule.java:470)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:202)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-24 10:17:18.090
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.updatesite.artifactRepository
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.getLocalRepositoryLocation(UpdateSiteMetadataRepositoryFactory.java:36)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.loadRepository(UpdateSiteArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.load(UpdateSiteArtifactRepositoryFactory.java:60)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.restoreSpecialRepositories(ArtifactRepositoryManager.java:127)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1014)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.removeRepository(AbstractRepositoryManager.java:928)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:684)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:203)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:108)
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.ensureStudioReposLoaded(SLSP2UpdateSites.java:582)
+	at com.silabs.ss.platform.internal.installer.core.scripting.SLSInstallerModule.updateInstallationMetadata(SLSInstallerModule.java:470)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:202)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.silabs.ss.platform.installer.core 4 0 2017-08-24 10:17:18.097
+!MESSAGE Package service could not resolve available packages.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getLockLocation(SimpleArtifactRepository.java:1493)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.canLock(SimpleArtifactRepository.java:1434)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.<init>(SimpleArtifactRepository.java:337)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.create(SimpleArtifactRepositoryFactory.java:134)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryCreate(ArtifactRepositoryManager.java:65)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.doCreateRepository(AbstractRepositoryManager.java:288)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.createRepository(ArtifactRepositoryManager.java:53)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.restoreSpecialRepositories(ArtifactRepositoryManager.java:137)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1014)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.removeRepository(AbstractRepositoryManager.java:928)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:684)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:203)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:108)
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.ensureStudioReposLoaded(SLSP2UpdateSites.java:582)
+	at com.silabs.ss.platform.internal.installer.core.scripting.SLSInstallerModule.updateInstallationMetadata(SLSInstallerModule.java:470)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:202)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.silabs.ss.platform.installer.core 4 0 2017-08-24 10:17:18.104
+!MESSAGE Update manager failed while checking updates 
+!STACK 0
+java.lang.NullPointerException
+	at com.silabs.ss.platform.internal.api.installer.core.InstallerUtils.scanFeaturesProvidingMetadata(InstallerUtils.java:346)
+	at com.silabs.ss.platform.internal.api.installer.core.InstallerUtils.getPackageProvidingMetadata(InstallerUtils.java:369)
+	at com.silabs.ss.platform.internal.installer.core.PackageService.loadRemotePackages(PackageService.java:606)
+	at com.silabs.ss.platform.internal.installer.core.PackageService.getAllAvailablePackages(PackageService.java:100)
+	at com.silabs.ss.platform.internal.installer.core.PackageService.checkForUpdates(PackageService.java:212)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.updatePackageMetadata(UpdateManager.java:208)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.ensureUpdatesFetched(UpdateManager.java:271)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager.access$5(UpdateManager.java:262)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-08-24 10:17:18.113
+!MESSAGE An internal error occurred during: "Checking for software updates".
+!STACK 0
+java.lang.NullPointerException
+	at com.silabs.ss.platform.internal.api.installer.core.SLSP2UpdateSites.removeAuthStudioRepoSites(SLSP2UpdateSites.java:715)
+	at com.silabs.ss.platform.internal.installer.core.updates.UpdateManager$1.run(UpdateManager.java:167)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-08-24 10:17:18.376 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data file:/C:/LocalProject/SHARP96/driver_SharpLCD/
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-24 10:17:24.796
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-24 10:19:49.580
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-08-24 10:20:05.365
+!MESSAGE Indexed 'efm32gg_demo' (11 sources, 79 headers) in 5,11 sec: 2 733 declarations; 9 228 references; 0 unresolved inclusions; 44 syntax errors; 3 unresolved names (0,025 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-08-24 10:20:10.810
+!MESSAGE Indexed 'sharplcd_demo_efm32hg' (11 sources, 86 headers) in 5,44 sec: 4 981 declarations; 11 264 references; 0 unresolved inclusions; 24 syntax errors; 13 unresolved names (0,08 %)
+!SESSION 2017-08-24 10:20:36.013 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data file:/C:/LocalProject/SHARP96/driver_SharpLCD/
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-24 10:20:42.355
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+!SESSION 2017-08-24 10:22:31.506 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-24 10:22:37.971
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-24 10:22:54.597
+!MESSAGE detectIAREWARMFromRegistry: null
+!SESSION 2017-08-24 12:51:05.961 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-24 12:51:22.249
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-24 12:51:38.144
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+!SESSION 2017-08-24 12:53:45.427 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-24 12:53:51.064
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-24 12:53:55.480
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+!SESSION 2017-08-25 10:15:27.542 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-25 10:16:52.222
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-25 10:17:30.101
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+!SESSION 2017-08-25 12:47:29.689 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-25 12:47:45.975
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-25 12:48:00.096
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 12:48:15.933
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 13:01:28.531
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+!SESSION 2017-08-25 13:22:33.104 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-25 13:22:38.786
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-25 13:22:43.924
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 13:24:07.693
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:00:07.055
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:01:12.971
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:01:53.058
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:03:29.051
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:21:14.829
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY org.eclipse.cdt.debug.edc 4 10004 2017-08-25 14:21:18.792
+!MESSAGE Fail to get TCF context for: rc.root.000440035009
+!STACK 0
+java.util.concurrent.ExecutionException: TCF task aborted
+	at org.eclipse.tcf.util.TCFTask.get(TCFTask.java:281)
+	at org.eclipse.cdt.debug.edc.services.Registers.getTCFRegistersContexts(Registers.java:1671)
+	at org.eclipse.cdt.debug.edc.services.Registers.createGroupsForContext(Registers.java:1860)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMRegisters.createGroupsForContext(ARMRegisters.java:206)
+	at org.eclipse.cdt.debug.edc.services.Registers.getGroupsForContext(Registers.java:1107)
+	at org.eclipse.cdt.debug.edc.services.Registers.findRegisterDMCByName(Registers.java:1018)
+	at org.eclipse.cdt.debug.edc.services.Registers.getRegisterValue(Registers.java:1393)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMStack.computeStackFrames(ARMStack.java:203)
+	at org.eclipse.cdt.debug.edc.services.Stack.updateFrames(Stack.java:1680)
+	at org.eclipse.cdt.debug.edc.services.Stack.getFramesForDMC(Stack.java:1659)
+	at org.eclipse.cdt.debug.edc.services.Stack$3.run(Stack.java:1477)
+	at org.eclipse.cdt.debug.edc.services.AbstractEDCService$SafeRunner.run(AbstractEDCService.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Exception: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at org.eclipse.tcf.internal.services.remote.RegistersProxy$2.<init>(RegistersProxy.java:220)
+	at org.eclipse.tcf.internal.services.remote.RegistersProxy.getChildren(RegistersProxy.java:220)
+	at org.eclipse.cdt.debug.edc.services.Registers$7.run(Registers.java:1658)
+	at org.eclipse.tcf.util.TCFTask$1.run(TCFTask.java:55)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	... 1 more
+Caused by: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:875)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+
+!ENTRY org.eclipse.cdt.debug.edc 4 10004 2017-08-25 14:21:19.178
+!MESSAGE Fail to get TCF context for: rc.root.000440035009
+!STACK 0
+java.util.concurrent.ExecutionException: TCF task aborted
+	at org.eclipse.tcf.util.TCFTask.get(TCFTask.java:281)
+	at org.eclipse.cdt.debug.edc.services.Registers.getTCFRegistersContexts(Registers.java:1671)
+	at org.eclipse.cdt.debug.edc.services.Registers.createGroupsForContext(Registers.java:1860)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMRegisters.createGroupsForContext(ARMRegisters.java:206)
+	at org.eclipse.cdt.debug.edc.services.Registers.getGroupsForContext(Registers.java:1107)
+	at org.eclipse.cdt.debug.edc.services.Registers.findRegisterDMCByName(Registers.java:1018)
+	at org.eclipse.cdt.debug.edc.services.Registers.getRegisterValue(Registers.java:1393)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMStack.computeStackFrames(ARMStack.java:157)
+	at org.eclipse.cdt.debug.edc.services.Stack.updateFrames(Stack.java:1680)
+	at org.eclipse.cdt.debug.edc.services.Stack.getFramesForDMC(Stack.java:1659)
+	at org.eclipse.cdt.debug.edc.services.Stack$4.run(Stack.java:1502)
+	at org.eclipse.cdt.debug.edc.services.AbstractEDCService$SafeRunner.run(AbstractEDCService.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Exception: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at org.eclipse.tcf.internal.services.remote.RegistersProxy$2.<init>(RegistersProxy.java:220)
+	at org.eclipse.tcf.internal.services.remote.RegistersProxy.getChildren(RegistersProxy.java:220)
+	at org.eclipse.cdt.debug.edc.services.Registers$7.run(Registers.java:1658)
+	at org.eclipse.tcf.util.TCFTask$1.run(TCFTask.java:55)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	... 1 more
+Caused by: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:875)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:21:50.071
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:24:15.446
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:25:03.478
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:26:15.670
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:52:20.469
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 14:54:43.121
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 15:13:50.264
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 15:18:58.968
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 15:20:44.149
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 15:24:27.167
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 15:27:55.548
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-25 15:30:29.355
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)

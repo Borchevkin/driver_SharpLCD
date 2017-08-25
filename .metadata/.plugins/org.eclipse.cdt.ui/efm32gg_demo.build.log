@@ -1,0 +1,6 @@
+15:30:28 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+make: Nothing to be done for `all'.
+
+15:30:29 Build Finished (took 1s.49ms)
+

@@ -1,0 +1,43 @@
+11:21:09 **** Build of configuration GNU ARM v4.9.3 - Debug for project sharplcd_demo_efm32hg ****
+make -j4 all 
+Building file: ../src/InitDevice.c
+Building file: ../src/bsp.c
+Building file: ../src/main.c
+Building file: ../src/sharplcd.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG=1' '-DEFM32HG322F64=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\sharplcd_demo_efm32hg\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/sharplcd_demo_efm32hg/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/InitDevice.d" -MT"src/InitDevice.o" -o "src/InitDevice.o" "../src/InitDevice.c"
+Invoking: GNU ARM C Compiler
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG=1' '-DEFM32HG322F64=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\sharplcd_demo_efm32hg\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/sharplcd_demo_efm32hg/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/bsp.d" -MT"src/bsp.o" -o "src/bsp.o" "../src/bsp.c"
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG=1' '-DEFM32HG322F64=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\sharplcd_demo_efm32hg\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/sharplcd_demo_efm32hg/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG=1' '-DEFM32HG322F64=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\sharplcd_demo_efm32hg\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/sharplcd_demo_efm32hg/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharplcd.d" -MT"src/sharplcd.o" -o "src/sharplcd.o" "../src/sharplcd.c"
+../src/sharplcd.c:11:20: error: unknown type name 'sharplcd_t'
+ void SHARPLCD_Init(sharplcd_t * sharplcd)
+                    ^
+../src/sharplcd.c:20:21: error: unknown type name 'sharplcd_t'
+ void SHARPLCD_Clear(sharplcd_t * sharplcd)
+                     ^
+../src/sharplcd.c:25:25: error: unknown type name 'sharplcd_t'
+ void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame)
+                         ^
+../src/sharplcd.c:30:32: error: unknown type name 'sharplcd_t'
+ void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd)
+                                ^
+../src/sharplcd.c:35:27: error: unknown type name 'sharplcd_t'
+ void SHARPLCD_SendTrailer(sharplcd_t * sharplcd)
+                           ^
+../src/sharplcd.c:40:25: error: unknown type name 'sharplcd_t'
+ void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray)
+                         ^
+make: *** [src/sharplcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: ../src/bsp.c
+Finished building: ../src/main.c
+Finished building: ../src/InitDevice.c
+ 
+ 
+ 
+
+11:21:12 Build Finished (took 3s.57ms)
+

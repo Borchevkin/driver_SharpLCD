@@ -10,6 +10,7 @@
 #include "bsp.h"
 
 sharplcd_t sharplcd;
+
 /* =====Counts 1ms timeTicks===== */
 volatile uint32_t msTicks = 0;
 
@@ -29,7 +30,18 @@ int main(void)
 	SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000);
 
 	// Init Display
-	SHARPLCD_Init();
+	sharplcd.Write = SPI1_SendPacket;
+	sharplcd.SetCS = DISPLAY_SetCS;
+	sharplcd.ClearCS = DISPLAY_ClearCS;
+	sharplcd.SetVCOM = DISPLAY_SetVCOM;
+	sharplcd.ClearVCOM = DISPLAY_ClearVCOM;
+	//sharplcd.GetVCOM = DISPLAY_GetVCOM;
+	sharplcd.SetDISP = DISPLAY_SetDISP;
+	sharplcd.ClearDISP = DISPLAY_ClearDISP;
+	sharplcd.SetLSBFirst = SPI1_SetLSBFirst;
+	sharplcd.SetMSBFirst = SPI1_SetMSBFirst;
+	sharplcd.DelayMs = Delay;
+	SHARPLCD_Init(&sharplcd);
 
 	//Set Display ON
 	DISPLAY_SetDISP();
@@ -43,27 +55,15 @@ int main(void)
 		GPIO_PinOutToggle(LED0_PORT, LED0_PIN);
 		GPIO_PinOutToggle(LED1_PORT, LED1_PIN);
 
-		//Lines
+		// ========== Test Field
 
-		// ========== Not working for now
-		DISPLAY_WriteLine(line_1, 12, 2, 0x40);
+		SHARPLCD_WriteLine(&sharplcd, 2, line_1);
 		Delay(500);
-
-		DISPLAY_WriteLine(line_1, 12, 4, 0x00);
+		SHARPLCD_WriteLine(&sharplcd, 4, line_1);
 		Delay(500);
-
-		DISPLAY_WriteLine(line_1, 12, 6, 0x40);
+		SHARPLCD_WriteLine(&sharplcd, 3, line_1);
 		Delay(500);
-
-		DISPLAY_WriteLine(line_1, 12, 8, 0x00);
-		Delay(500);
-
-		DISPLAY_WriteLine(line_1, 12, 10, 0x40);
-		Delay(500);
-
-		//Clear display
-		DISPLAY_Clear(0x00);
-
+		SHARPLCD_Clear(&sharplcd);
 		Delay(500);
 	}
 }

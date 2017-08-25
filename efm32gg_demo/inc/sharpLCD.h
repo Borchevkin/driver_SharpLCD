@@ -19,14 +19,16 @@
 #define SHARPLCD_NULL_BYTE		0x00	//Trailer after command and data
 
 //Resolution
-#define SHARPLCD_XRES 		 	96		//pixels per horizontal line
-#define SHARPLCD_YRES 		 	96		//pixels per vertical line
-#define SHARPLCD_BYTES_LINE 	(uint8_t(SHARPLCD_XRES / 8))					//number of bytes in a line
-#define SHARPLCD_BUF_SIZE   	(uint8_t(SHARPLCD_YRES * SHARPLCD_BYTES_LINE))
+#define SHARPLCD_XRES 			(96)									//pixels per horizontal line
+#define SHARPLCD_YRES			(96)									//pixels per vertical line
+#define SHARPLCD_BYTES_LINE 	(SHARPLCD_XRES / 8)						//number of bytes in a line
+#define SHARPLCD_BUF_SIZE   	(SHARPLCD_YRES * SHARPLCD_BYTES_LINE)
 
 //VCOM defines
-#define SHARPLCD_VCOM_HI_CMD 	0x40
-#define SHARPLCD_VCOM_LO_CMD 	0x00
+#define SHARPLCD_VCOM_HI_CMD 		0x40
+#define SHARPLCD_VCOM_LO_CMD 		0x00
+#define SHARPLCD_VCOM_TOGGLE_CMD 	0x40
+
 /* ========================== */
 
 /* ==========TYPES========== */
@@ -39,11 +41,12 @@ typedef struct {
 	/* Calculated values */
 	uint16_t bytesPerLine;
 	uint16_t bufferSize;
+	uint8_t currentVcom;
 
 	/* Last values */
 
 	/* Pointers to functions */
-	void (*Write)(uint8_t * pData, uint16_t * len);
+	void (*Write)(uint8_t * pData, uint16_t len);
 	void (*SetCS)(void);
 	void (*ClearCS)(void);
 	void (*SetVCOM)(void);
@@ -60,6 +63,7 @@ typedef struct {
 
 /* ==========PROTOTYPES========== */
 
+void SHARPLCD_ToggleVCOM(sharplcd_t * sharplcd);
 void SHARPLCD_Init(sharplcd_t * sharplcd);
 void SHARPLCD_Clear(sharplcd_t * sharplcd);
 void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd);

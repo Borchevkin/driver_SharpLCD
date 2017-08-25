@@ -83,32 +83,3 @@ void DISPLAY_ClearDISP(void)
 {
 	GPIO_PinOutClear(DISP_PORT, DISP_PIN);
 }
-
-
-/* =================================Rework and transfer in sharplcd.c================================= */
-/*
-void DISPLAY_WriteLine(uint8_t * dataarr, uint8_t len, uint8_t linenumber, uint8_t vcom)
-{
-	SPI1_SetMSBFirst();											//Set MSB
-	DISPLAY_SetCS();											//Set CS
-	USART_SpiTransfer(USART1, SHARPLCD_WRITE_CMD | vcom);		//Line and Vcom
-	SPI1_SetLSBFirst();											//Set LSB
-	SPI1_SendPacket(&linenumber, 1);							//Line number
-	SPI1_SendPacket(dataarr, len);								//Data
-	SPI1_SendPacket((uint8_t *)(SHARPLCD_NULL_BYTE), 1);		//==Trailer==
-	SPI1_SendPacket((uint8_t *)(SHARPLCD_NULL_BYTE), 1);		//===========
-	DISPLAY_ClearCS();											//Clear CS
-	SPI1_SetMSBFirst();											//Set MSB
-}
-
-void DISPLAY_Clear(uint8_t vcom)
-{
-	SPI1_SetMSBFirst();											//Set MSB
-	DISPLAY_SetCS();											//Set CS
-	USART_SpiTransfer(USART1, SHARPLCD_CLEAR_CMD | vcom);		//Command to clean and Vcom
-	SPI1_SetLSBFirst();											//Set LSB
-	SPI1_SendPacket((uint8_t *)(SHARPLCD_NULL_BYTE), 1);		//Trailer
-	DISPLAY_ClearCS();											//Clear CS
-	SPI1_SetMSBFirst();											//Set MSB
-}
-*/
