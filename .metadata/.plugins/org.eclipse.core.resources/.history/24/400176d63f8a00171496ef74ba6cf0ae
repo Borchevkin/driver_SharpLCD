@@ -57,22 +57,14 @@ int main(void)
 
 		// ========== Test Field
 
-		SHARPLCD_WriteLine(&sharplcd, 0, line_1);
-		Delay(1000);
-		SHARPLCD_WriteLine(&sharplcd, 1, line_1);
-		Delay(1000);
 		SHARPLCD_WriteLine(&sharplcd, 2, line_1);
-		Delay(1000);
-		SHARPLCD_WriteLine(&sharplcd, 3, line_1);
-		Delay(1000);
+		Delay(500);
 		SHARPLCD_WriteLine(&sharplcd, 4, line_1);
-		Delay(1000);
-		SHARPLCD_WriteLine(&sharplcd, 5, line_1);
-		Delay(1000);
-		SHARPLCD_WriteLine(&sharplcd, 6, line_1);
-		Delay(1000);
+		Delay(500);
+		SHARPLCD_WriteLine(&sharplcd, 3, line_1);
+		Delay(500);
 		SHARPLCD_Clear(&sharplcd);
-		Delay(1000);
+		Delay(500);
 	}
 }
 /* ============================================================ */

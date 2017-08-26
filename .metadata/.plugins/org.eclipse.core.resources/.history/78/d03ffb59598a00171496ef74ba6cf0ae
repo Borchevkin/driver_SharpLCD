@@ -33,7 +33,6 @@ void SHARPLCD_ToggleVCOM(sharplcd_t * sharplcd)
 void SHARPLCD_Clear(sharplcd_t * sharplcd)
 {
 	uint8_t buffer[1];
-
 	//1. Set MSB byte order for command
 	sharplcd->SetMSBFirst();
 
@@ -77,7 +76,6 @@ void SHARPLCD_SendTrailer(sharplcd_t * sharplcd)
 void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray)
 {
 	uint8_t buffer[1];
-
 	//1. Set MSB byte order for command
 	sharplcd->SetMSBFirst();
 

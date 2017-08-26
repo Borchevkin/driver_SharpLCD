@@ -59,17 +59,17 @@ int main(void)
 
 		SHARPLCD_WriteLine(&sharplcd, 0, line_1);
 		Delay(1000);
-		SHARPLCD_WriteLine(&sharplcd, 1, line_1);
-		Delay(1000);
 		SHARPLCD_WriteLine(&sharplcd, 2, line_1);
-		Delay(1000);
-		SHARPLCD_WriteLine(&sharplcd, 3, line_1);
 		Delay(1000);
 		SHARPLCD_WriteLine(&sharplcd, 4, line_1);
 		Delay(1000);
-		SHARPLCD_WriteLine(&sharplcd, 5, line_1);
-		Delay(1000);
 		SHARPLCD_WriteLine(&sharplcd, 6, line_1);
+		Delay(1000);
+		SHARPLCD_WriteLine(&sharplcd, 8, line_1);
+		Delay(1000);
+		SHARPLCD_WriteLine(&sharplcd, 10, line_1);
+		Delay(1000);
+		SHARPLCD_WriteLine(&sharplcd, 12, line_1);
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 		Delay(1000);

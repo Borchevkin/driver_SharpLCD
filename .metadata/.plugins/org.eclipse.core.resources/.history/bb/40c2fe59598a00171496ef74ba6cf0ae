@@ -29,6 +29,8 @@
 #define SHARPLCD_VCOM_LO_CMD 		0x00
 #define SHARPLCD_VCOM_TOGGLE_CMD 	0x40
 
+/* ========================== */
+
 /* ==========TYPES========== */
 
 typedef struct {
@@ -57,6 +59,8 @@ typedef struct {
 	void (*DelayMs)(uint32_t delayMs);
 } sharplcd_t;
 
+/* ========================= */
+
 /* ==========PROTOTYPES========== */
 
 void SHARPLCD_ToggleVCOM(sharplcd_t * sharplcd);
@@ -66,5 +70,6 @@ void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd);
 void SHARPLCD_SendTrailer(sharplcd_t * sharplcd);
 void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray);
 void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame);
+/* ============================== */
 
 #endif /* INC_SHARPLCD_H_ */
