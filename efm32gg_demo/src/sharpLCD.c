@@ -110,3 +110,8 @@ void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArra
 	//9. Set MSB byte order again
 	sharplcd->SetMSBFirst();
 }
+
+
+/* =============================TESTING============================= */
+
+

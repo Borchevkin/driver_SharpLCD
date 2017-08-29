@@ -1,0 +1,181 @@
+/*
+ * sharpLCD.c
+ *
+ *  Created on: 23 рту. 2017 у.
+ *      Author: user
+ */
+
+#include <stdint.h>
+#include <stdbool.h>
+#include "sharpLCD.h"
+#include "testLogo.h"
+
+
+void SHARPLCD_Init(sharplcd_t * sharplcd)
+{
+	//Calculate values for struct
+	sharplcd->xRes = SHARPLCD_XRES;
+	sharplcd->yRes = SHARPLCD_YRES;
+	sharplcd->bytesPerLine = SHARPLCD_BYTES_LINE;
+	sharplcd->bufferSize = SHARPLCD_BUF_SIZE;
+	sharplcd->currentVcom = 0;
+
+	//Set CS to inactive
+
+	//Set DISP to inactive
+
+}
+
+void SHARPLCD_ToggleVCOM(sharplcd_t * sharplcd)
+{
+	sharplcd->currentVcom ^= SHARPLCD_VCOM_TOGGLE_CMD;
+}
+
+void SHARPLCD_Clear(sharplcd_t * sharplcd)
+{
+	uint8_t buffer[1];
+
+	//1. Set MSB byte order for command
+	sharplcd->SetMSBFirst();
+
+	//2. Pullup CS line for select display
+	sharplcd->SetCS();
+
+	//3. Write command
+	buffer[0] = SHARPLCD_CLEAR_CMD | sharplcd->currentVcom;
+	SHARPLCD_ToggleVCOM(sharplcd);
+	sharplcd->Write(buffer, 1);
+
+	//4. Set proper byte order - LSB for line number and data
+	sharplcd->SetLSBFirst();
+
+	//5. Write trailer
+	buffer[0] = SHARPLCD_NULL_BYTE;
+	sharplcd->Write(buffer, 1);
+
+	//6. Clear CS
+	sharplcd->ClearCS();
+
+	//7. Set MSB byte order again
+	sharplcd->SetMSBFirst();
+}
+
+void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame)
+{
+
+}
+
+void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd)
+{
+
+}
+
+void SHARPLCD_SendTrailer(sharplcd_t * sharplcd)
+{
+
+}
+
+void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray)
+{
+	uint8_t buffer[1];
+
+	//1. Set MSB byte order for command
+	sharplcd->SetMSBFirst();
+
+	//2. Pullup CS line for select display
+	sharplcd->SetCS();
+
+	//3. Write command
+	buffer[0] = SHARPLCD_WRITE_CMD | sharplcd->currentVcom;
+	SHARPLCD_ToggleVCOM(sharplcd);
+	sharplcd->Write(buffer, 1);
+
+	//4. Set proper byte order - LSB for line number and data
+	sharplcd->SetLSBFirst();
+
+	//5. Send number of line. Warning! Number of line starts from 1!
+	buffer[0] = lineNo + 1;
+	sharplcd->Write(buffer, 1);
+
+	//6. Write line data
+	sharplcd->Write(lineArray, sharplcd->bytesPerLine);
+
+	//7. Trailer
+	buffer[0] = SHARPLCD_NULL_BYTE;
+	sharplcd->Write(buffer, 1);
+	sharplcd->Write(buffer, 1);
+
+	//8. Clear CS
+	sharplcd->ClearCS();
+
+	//9. Set MSB byte order again
+	sharplcd->SetMSBFirst();
+}
+
+
+
+
+
+
+
+/* =============================TESTING============================= */
+
+void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, int width, int height, char line, char options)
+{
+	sharplcd->SetMSBFirst();		// bit order MSB first
+
+    if (!bitmap) return;
+
+    unsigned char b;
+    int i = 0;
+    int p = 0;
+    int x = width/8;
+
+    while (height > 0 && line < SHARPLCD_YRES) {
+        while (i < SHARPLCD_XRES/8 && i < x) {
+            b = bitmap[p+i];
+            if (!(options & 1)) {         // invert bits if DISP_INVERT is _NOT_ selected
+                b = ~b;// pixels are LOW active
+            }
+            m_buffer[i] = b;
+            i++;
+        }
+        SHARPLCD_WriteBuffer(&sharplcd, line);
+        p += x;
+        i = 0;
+        height--;
+        line++;
+    }
+}
+
+
+void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, char line)
+{
+	uint8_t buffer[1];
+
+    if (line > SHARPLCD_YRES) return;         // ignore writing to invalid lines
+
+    sharplcd->SetCS();
+
+	buffer[0] = SHARPLCD_WRITE_CMD | sharplcd->currentVcom;
+	SHARPLCD_ToggleVCOM(sharplcd);
+	sharplcd->Write(buffer, 1);
+
+	sharplcd->SetLSBFirst();
+
+	buffer[0] = line + 1;
+	sharplcd->Write(buffer, 1);
+
+    char j = 0;
+    while (j < (SHARPLCD_XRES/8)) {           // write pixels / 8 bytes
+    	sharplcd->Write(m_buffer[j++]);
+    }
+
+	buffer[0] = SHARPLCD_NULL_BYTE;
+	sharplcd->Write(buffer, 1);
+	sharplcd->Write(buffer, 1);
+
+	sharplcd->ClearCS();
+
+	sharplcd->SetMSBFirst();
+}
