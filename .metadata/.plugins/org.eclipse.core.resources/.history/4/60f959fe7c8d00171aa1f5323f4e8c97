@@ -20,6 +20,7 @@ char m_buffer[12];
 void WriteBuffer(char line);
 void Print(const char* text, char line, char options);
 uint8_t Vcom = 0x40;
+char text_buffer[8];
 
 /* ==================================== */
 
@@ -57,6 +58,15 @@ int main(void)
 
 	//Set Display ON
 	DISPLAY_SetDISP();
+
+	// ================= Delete later
+	SHARPLCD_Clear(&sharplcd);
+	text_buffer[0] = ' ';
+	text_buffer[1] = 0;
+	text_buffer[2] = 0;
+	text_buffer[3] = ':';
+	text_buffer[4] = 0;
+	text_buffer[5] = 0;
 
 	while (1)
 	{
@@ -99,7 +109,7 @@ int main(void)
 
 
 		// ====================Heart test====================
-
+		/*
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 		Delay(1000);
@@ -107,12 +117,22 @@ int main(void)
 		Delay(1000);
 		Print("       TIME", 1, 0);
 		Delay(1000);
-		Print("  HR:79     ", 80, 0);
+		Print("     79     ", 80, 4);
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
-
+		*/
 		// ==================================================
 
+		text_buffer[0] = ' ';
+		text_buffer[1] += 1;
+		text_buffer[2] += 2;
+		text_buffer[3] = ':';
+		text_buffer[4] += 2;
+		text_buffer[5] += 1;
+
+		Print(text_buffer, 40, 0);
+
+		Delay(1000);
 	}
 }
 /* ============================================================ */

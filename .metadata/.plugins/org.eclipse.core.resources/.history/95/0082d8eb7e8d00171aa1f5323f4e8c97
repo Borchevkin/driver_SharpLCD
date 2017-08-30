@@ -20,6 +20,7 @@ char m_buffer[12];
 void WriteBuffer(char line);
 void Print(const char* text, char line, char options);
 uint8_t Vcom = 0x40;
+char text_buffer[8];
 
 /* ==================================== */
 

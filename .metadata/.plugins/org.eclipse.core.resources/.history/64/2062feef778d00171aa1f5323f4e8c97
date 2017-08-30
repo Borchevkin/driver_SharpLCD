@@ -67,7 +67,7 @@ int main(void)
 		GPIO_PinOutToggle(LED0_PORT, LED0_PIN);
 		GPIO_PinOutToggle(LED1_PORT, LED1_PIN);
 
-		// ================================= Test Field
+		// ========== Test Field
 
 		// ====================== First decent result
 		/*
@@ -105,13 +105,7 @@ int main(void)
 		Delay(1000);
 		Bitmap(heart, 96, 96, 0, 1);
 		Delay(1000);
-		Print("       TIME", 1, 0);
-		Delay(1000);
-		Print("  HR:79     ", 80, 0);
-		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
-
-		// ==================================================
 
 	}
 }
