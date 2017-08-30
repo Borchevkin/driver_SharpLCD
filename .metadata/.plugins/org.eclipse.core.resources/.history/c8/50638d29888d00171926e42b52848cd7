@@ -46,7 +46,6 @@ typedef struct {
 	uint8_t currentVcom;
 	char m_buffer[12];
 
-
 	/* Last values */
 
 	/* Pointers to functions */
@@ -73,8 +72,8 @@ void SHARPLCD_SendTrailer(sharplcd_t * sharplcd);
 void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray);
 void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame);
 
-void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, char lineNo, char options);
-void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, char lineNo);
-void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, char lineNo, char options);
+void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, uint8_t lineNo);
+void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, uint8_t lineNo, uint8_t options);
 
 #endif /* INC_SHARPLCD_H_ */

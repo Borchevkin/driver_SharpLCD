@@ -9,6 +9,7 @@
 #include "sharpLCD.h"
 #include "bsp.h"
 #include "testFrame.h"
+#include "font.h"
 
 sharplcd_t sharplcd;
 
@@ -111,12 +112,10 @@ int main(void)
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 		*/
-
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 		Delay(1000);
-		//SHARPLCD_Bitmap(&sharplcd, heart, 96, 96, 0, 1);
-		SHARPLCD_Print(&sharplcd, "TIME", 4, 0);
+		SHARPLCD_Bitmap(&sharplcd, heart, 96, 96, 0, 1);
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 

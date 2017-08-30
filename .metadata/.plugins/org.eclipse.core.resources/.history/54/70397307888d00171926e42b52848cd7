@@ -9,6 +9,7 @@
 #include "sharpLCD.h"
 #include "bsp.h"
 #include "testFrame.h"
+#include "font.h"
 
 sharplcd_t sharplcd;
 
@@ -60,8 +61,7 @@ int main(void)
 	while (1)
 	{
 		//Straight line
-
-		//uint8_t line_1[12] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+		uint8_t line_1[12] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 
 		//LEDs
 		GPIO_PinOutToggle(LED0_PORT, LED0_PIN);
@@ -111,12 +111,10 @@ int main(void)
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 		*/
-
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 		Delay(1000);
-		//SHARPLCD_Bitmap(&sharplcd, heart, 96, 96, 0, 1);
-		SHARPLCD_Print(&sharplcd, "TIME", 4, 0);
+		SHARPLCD_Bitmap(&sharplcd, heart, 96, 96, 0, 1);
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 

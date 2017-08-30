@@ -9,17 +9,18 @@
 #include "sharpLCD.h"
 #include "bsp.h"
 #include "testFrame.h"
+#include "font.h"
 
 sharplcd_t sharplcd;
 
 /* =============TEST FIELD============= */
-/*
+
 void Bitmap(const unsigned char* bitmap, int width, int height, char line, char options);
 char m_buffer[12];
 void WriteBuffer(char line);
 void Print(const char* text, char line, char options);
 uint8_t Vcom = 0x40;
-*/
+
 /* ==================================== */
 
 /* =====Counts 1ms timeTicks===== */
@@ -60,8 +61,7 @@ int main(void)
 	while (1)
 	{
 		//Straight line
-
-		//uint8_t line_1[12] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+		uint8_t line_1[12] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 
 		//LEDs
 		GPIO_PinOutToggle(LED0_PORT, LED0_PIN);
@@ -111,15 +111,6 @@ int main(void)
 		Delay(1000);
 		SHARPLCD_Clear(&sharplcd);
 		*/
-
-		Delay(1000);
-		SHARPLCD_Clear(&sharplcd);
-		Delay(1000);
-		//SHARPLCD_Bitmap(&sharplcd, heart, 96, 96, 0, 1);
-		SHARPLCD_Print(&sharplcd, "TIME", 4, 0);
-		Delay(1000);
-		SHARPLCD_Clear(&sharplcd);
-
 		// ==================================================
 
 	}
@@ -130,7 +121,7 @@ int main(void)
 
 
 /* ==========================TEST FIELD========================== */
-/*
+
 void Bitmap(const unsigned char* bitmap, int width, int height, char line, char options)
 {
 	SPI1_SetMSBFirst();
@@ -184,6 +175,8 @@ void WriteBuffer(char line)
 
     USART_SpiTransfer(USART1, 0);
     USART_SpiTransfer(USART1, 0);
+
+    SPI1_SetMSBFirst();
 
     DISPLAY_ClearCS();
 }
@@ -241,6 +234,5 @@ void Print(const char* text, char line, char options)
         k++;                                                 // next pixel line
     }
 }
-*/
 /* ============================================================== */
 

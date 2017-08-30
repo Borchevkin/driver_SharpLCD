@@ -46,7 +46,6 @@ typedef struct {
 	uint8_t currentVcom;
 	char m_buffer[12];
 
-
 	/* Last values */
 
 	/* Pointers to functions */

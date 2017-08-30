@@ -44,8 +44,7 @@ typedef struct {
 	uint16_t bytesPerLine;
 	uint16_t bufferSize;
 	uint8_t currentVcom;
-	char m_buffer[12];
-
+	uint8_t m_buffer[12];
 
 	/* Last values */
 

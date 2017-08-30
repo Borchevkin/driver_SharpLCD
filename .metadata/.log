@@ -626,3 +626,50 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-30 14:16:06.455
 !MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+!SESSION 2017-08-30 14:43:06.373 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-30 14:43:17.549
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-30 14:43:29.296
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+!SESSION 2017-08-30 15:27:24.197 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-30 15:27:30.032
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-30 15:27:34.710
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-30 15:53:14.334
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-30 15:55:13.036
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.support.mcu.part.core 4 0 2017-08-30 15:55:14.559
+!MESSAGE Could not connect debugger.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2017-08-30 15:55:14.583
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@118aa65): Status ERROR: com.silabs.ss.support.mcu.part.core code=0 Could not connect debugger. null' resulted in an error.
+!SUBENTRY 1 com.silabs.ss.support.mcu.part.core 4 0 2017-08-30 15:55:14.583
+!MESSAGE Could not connect debugger.
+
+!ENTRY com.silabs.ss.support.mcu.part.core 4 0 2017-08-30 15:55:14.597
+!MESSAGE Could not connect debugger.
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-30 15:55:25.179
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-30 15:58:58.635
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)

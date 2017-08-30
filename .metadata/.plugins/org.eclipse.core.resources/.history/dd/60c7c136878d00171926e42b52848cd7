@@ -9,7 +9,6 @@
 #include <stdbool.h>
 #include "sharpLCD.h"
 #include "font.h"
-#include "testFrame.h"
 
 
 void SHARPLCD_Init(sharplcd_t * sharplcd)
@@ -163,9 +162,9 @@ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t 
 	if (!bitmap) return;
 
 	unsigned char b;
-	uint8_t i = 0;
-	uint8_t p = 0;
-	uint8_t x = width/8;
+	int i = 0;
+	int p = 0;
+	int x = width/8;
 
 	while (height > 0 && lineNo < SHARPLCD_YRES) {
 		while (i < SHARPLCD_XRES/8 && i < x) {
@@ -230,4 +229,3 @@ void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, char lineNo, char op
 		k++;                                                 // next pixel line
 	}
 }
-

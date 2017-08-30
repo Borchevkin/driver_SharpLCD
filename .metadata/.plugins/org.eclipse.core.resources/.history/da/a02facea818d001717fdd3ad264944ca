@@ -18,10 +18,6 @@
 #define SHARPLCD_NOP_CMD	 	0x00	//NOP command (used to switch VCOM)
 #define SHARPLCD_NULL_BYTE		0x00	//Trailer after command and data
 
-//Options
-#define SHARPLCD_DISP_INVERT	0x01
-#define SHARPLCD_DISP_HIGH		0x04
-
 //Resolution
 #define SHARPLCD_XRES 			(96)									//pixels per horizontal line
 #define SHARPLCD_YRES			(96)									//pixels per vertical line
@@ -44,8 +40,6 @@ typedef struct {
 	uint16_t bytesPerLine;
 	uint16_t bufferSize;
 	uint8_t currentVcom;
-	char m_buffer[12];
-
 
 	/* Last values */
 
@@ -72,9 +66,5 @@ void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd);
 void SHARPLCD_SendTrailer(sharplcd_t * sharplcd);
 void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray);
 void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame);
-
-void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, char lineNo, char options);
-void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, char lineNo);
-void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, char lineNo, char options);
 
 #endif /* INC_SHARPLCD_H_ */
