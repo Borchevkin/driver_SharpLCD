@@ -9,8 +9,6 @@
 #include <stdbool.h>
 #include "sharpLCD.h"
 #include "font.h"
-#include "testFrame.h"
-
 
 void SHARPLCD_Init(sharplcd_t * sharplcd)
 {
@@ -113,7 +111,7 @@ void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArra
 	sharplcd->ClearCS();
 }
 
-void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, char lineNo)
+void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, uint8_t lineNo)
 {
 	if (lineNo > SHARPLCD_YRES) return;
 
@@ -141,9 +139,11 @@ void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, char lineNo)
 	sharplcd->SetMSBFirst();
 
 	//7. Write line data
-	char j = 0;
+	uint8_t j = 0;
 	while (j < (SHARPLCD_XRES/8)) {           // write pixels / 8 bytes
-		sharplcd->Write(sharplcd->m_buffer[j++], sharplcd->bytesPerLine);
+		buffer[0] = sharplcd->m_buffer[j];
+		sharplcd->Write(buffer, 1);
+		j++;
 	}
 
 	//8. Trailer
@@ -155,17 +155,17 @@ void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, char lineNo)
 	sharplcd->ClearCS();
 }
 
-void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, char lineNo, char options)
+void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options)
 {
 	//1. Set MSB byte order for command
 	sharplcd->SetMSBFirst();
 
 	if (!bitmap) return;
 
-	unsigned char b;
-	uint8_t i = 0;
-	uint8_t p = 0;
-	uint8_t x = width/8;
+	uint16_t b;
+	uint16_t i = 0;
+	uint16_t p = 0;
+	uint16_t x = width/8;
 
 	while (height > 0 && lineNo < SHARPLCD_YRES) {
 		while (i < SHARPLCD_XRES/8 && i < x) {
@@ -184,7 +184,7 @@ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t 
 	}
 }
 
-void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, char lineNo, char options)
+void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, uint8_t lineNo, uint8_t options)
 {
 	//1. Set MSB byte order for command
 	sharplcd->SetMSBFirst();
@@ -211,6 +211,11 @@ void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, char lineNo, char op
 
 			if (!(options & SHARPLCD_DISP_INVERT)) {                  // invert bits if DISP_INVERT is _NOT_ selected
 				b = ~b;// pixels are LOW active
+			}
+
+			if (!((options & 2) && (c != 0))) {           // double width rendering if DISP_WIDE and character is not SPACE
+				sharplcd->m_buffer[j] = b;                // store pixels in line buffer
+				j++;                                      // we've written two bytes to buffer
 			}
 
 			i++;                                             // next character

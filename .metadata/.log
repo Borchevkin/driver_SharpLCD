@@ -673,3 +673,248 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-30 15:58:58.635
 !MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+!SESSION 2017-08-31 11:26:35.459 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-08-31 11:27:37.907
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-08-31 11:28:27.191
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:31:30.510
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:34:09.575
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:45:16.105
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:45:47.000
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:46:48.162
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:48:15.073
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:50:47.541
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:51:12.768
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:59:27.464
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.support.mcu.part.core 4 0 2017-08-31 11:59:29.098
+!MESSAGE Could not connect debugger.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2017-08-31 11:59:29.119
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@1e5295): Status ERROR: com.silabs.ss.support.mcu.part.core code=0 Could not connect debugger. null' resulted in an error.
+!SUBENTRY 1 com.silabs.ss.support.mcu.part.core 4 0 2017-08-31 11:59:29.119
+!MESSAGE Could not connect debugger.
+
+!ENTRY com.silabs.ss.support.mcu.part.core 4 0 2017-08-31 11:59:29.131
+!MESSAGE Could not connect debugger.
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 11:59:35.673
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:01:21.671
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:02:14.752
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:07:21.423
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:07:53.608
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:08:58.706
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:15:36.394
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:17:43.517
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:19:17.069
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:21:43.896
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:23:10.692
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:24:16.057
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:27:34.943
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:28:30.168
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:29:24.434
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:31:31.328
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:32:06.266
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:35:23.247
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:37:50.165
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:45:12.782
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:46:22.003
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:57:01.077
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 12:57:23.838
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:11:38.223
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:20:50.207
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:27:41.456
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:28:31.728
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:30:24.462
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:32:28.802
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:33:33.939
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:34:16.946
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:35:20.580
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:39:02.207
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:41:23.125
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:44:11.479
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:44:48.060
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.core 4 0 2017-08-31 13:44:52.421
+!MESSAGE failed to fetch default code context
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems fetching memory regions
+	at com.silabs.ss.framework.debugger.api.core.memory.SLSMemory.getMemoryRegions(SLSMemory.java:95)
+	at com.silabs.ss.framework.debugger.api.core.memory.SLSMemorySpaces.getDefaultCodeContext(SLSMemorySpaces.java:141)
+	at org.eclipse.cdt.debug.edc.internal.services.dsf.Memory.useDefaultCodeContext(Memory.java:184)
+	at org.eclipse.cdt.debug.edc.internal.services.dsf.Memory.getMemoryCache(Memory.java:114)
+	at org.eclipse.cdt.debug.edc.internal.services.dsf.Memory.getMemory(Memory.java:253)
+	at org.eclipse.cdt.debug.edc.internal.services.dsf.Memory$6.run(Memory.java:523)
+	at org.eclipse.cdt.debug.edc.services.AbstractEDCService$SafeRunner.run(AbstractEDCService.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Contains: Error fetching memory spaces from: rc.root.000440035009
+!SUBENTRY 1 com.silabs.ss.framework.debugger.core 4 0 2017-08-31 13:44:52.440
+!MESSAGE Problems fetching memory regions
+!SUBENTRY 2 com.silabs.ss.framework.debugger.core 4 10005 2017-08-31 13:44:52.440
+!MESSAGE Error fetching memory spaces from: rc.root.000440035009
+
+!ENTRY org.eclipse.cdt.debug.edc 4 10005 2017-08-31 13:44:52.448
+!MESSAGE Fail to read memory.
+!STACK 0
+java.lang.Exception: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at org.eclipse.tcf.internal.services.remote.MemoryProxy$2.<init>(MemoryProxy.java:334)
+	at org.eclipse.tcf.internal.services.remote.MemoryProxy.getContext(MemoryProxy.java:334)
+	at org.eclipse.cdt.debug.edc.internal.services.dsf.MemoryCache$1.run(MemoryCache.java:436)
+	at org.eclipse.tcf.util.TCFTask$2.run(TCFTask.java:73)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:875)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:49:52.012
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:55:38.694
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 13:57:00.883
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:05:26.200
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:06:05.501
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:20:46.704
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:22:52.507
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:25:39.556
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:29:23.833
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:32:18.305
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:42:01.533
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 14:43:30.659
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 15:03:21.920
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 15:04:22.461
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 15:05:33.688
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 15:08:23.816
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 15:09:34.777
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
