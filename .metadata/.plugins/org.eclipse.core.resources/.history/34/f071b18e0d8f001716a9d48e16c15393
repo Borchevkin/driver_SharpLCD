@@ -25,7 +25,6 @@ int min_2 = 0;
 int sec_2 = 0;
 
 // ===============================
-
 /* =====Counts 1ms timeTicks===== */
 volatile uint32_t msTicks = 0;
 

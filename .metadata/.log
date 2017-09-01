@@ -918,3 +918,137 @@ Caused by: java.lang.Error: Channel is closed
 
 !ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-08-31 15:09:34.777
 !MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+!SESSION 2017-09-01 10:53:34.639 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-09-01 10:54:42.545
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-09-01 10:55:36.021
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:05:03.288
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:06:44.820
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:09:50.950
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY org.eclipse.cdt.debug.edc 4 10004 2017-09-01 11:09:54.927
+!MESSAGE Fail to get TCF context for: rc.root.000440035009.rgGeneral
+!STACK 0
+java.util.concurrent.ExecutionException: TCF task aborted
+	at org.eclipse.tcf.util.TCFTask.get(TCFTask.java:281)
+	at org.eclipse.cdt.debug.edc.services.Registers.getTCFRegistersContexts(Registers.java:1692)
+	at org.eclipse.cdt.debug.edc.services.Registers.createRegistersForGroup(Registers.java:1797)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMRegisters.createRegistersForGroup(ARMRegisters.java:223)
+	at org.eclipse.cdt.debug.edc.services.Registers$RegisterGroupDMC.getRegisters(Registers.java:162)
+	at org.eclipse.cdt.debug.edc.services.Registers.findRegisterDMCByName(Registers.java:1022)
+	at org.eclipse.cdt.debug.edc.services.Registers.getRegisterValue(Registers.java:1393)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMStack.computeStackFrames(ARMStack.java:157)
+	at org.eclipse.cdt.debug.edc.services.Stack.updateFrames(Stack.java:1680)
+	at org.eclipse.cdt.debug.edc.services.Stack.getFramesForDMC(Stack.java:1659)
+	at org.eclipse.cdt.debug.edc.services.Stack$3.run(Stack.java:1477)
+	at org.eclipse.cdt.debug.edc.services.AbstractEDCService$SafeRunner.run(AbstractEDCService.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Command [C 3075 Registers getContext "rc.root.000440035009.rgGeneral.rR0"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	... 1 more
+Caused by: java.io.IOException: Channel is closed
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:747)
+	... 2 more
+
+!ENTRY org.eclipse.cdt.debug.edc 4 10004 2017-09-01 11:09:55.196
+!MESSAGE Fail to get TCF context for: rc.root.000440035009.rgGeneral
+!STACK 0
+java.util.concurrent.ExecutionException: TCF task aborted
+	at org.eclipse.tcf.util.TCFTask.get(TCFTask.java:281)
+	at org.eclipse.cdt.debug.edc.services.Registers.getTCFRegistersContexts(Registers.java:1671)
+	at org.eclipse.cdt.debug.edc.services.Registers.createRegistersForGroup(Registers.java:1797)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMRegisters.createRegistersForGroup(ARMRegisters.java:223)
+	at org.eclipse.cdt.debug.edc.services.Registers$RegisterGroupDMC.getRegisters(Registers.java:162)
+	at org.eclipse.cdt.debug.edc.services.Registers.findRegisterDMCByName(Registers.java:1022)
+	at org.eclipse.cdt.debug.edc.services.Registers.getRegisterValue(Registers.java:1393)
+	at org.eclipse.cdt.debug.edc.internal.arm.ARMStack.computeStackFrames(ARMStack.java:157)
+	at org.eclipse.cdt.debug.edc.services.Stack.updateFrames(Stack.java:1680)
+	at org.eclipse.cdt.debug.edc.services.Stack.getFramesForDMC(Stack.java:1659)
+	at org.eclipse.cdt.debug.edc.services.Stack$4.run(Stack.java:1502)
+	at org.eclipse.cdt.debug.edc.services.AbstractEDCService$SafeRunner.run(AbstractEDCService.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Exception: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at org.eclipse.tcf.internal.services.remote.RegistersProxy$2.<init>(RegistersProxy.java:220)
+	at org.eclipse.tcf.internal.services.remote.RegistersProxy.getChildren(RegistersProxy.java:220)
+	at org.eclipse.cdt.debug.edc.services.Registers$7.run(Registers.java:1658)
+	at org.eclipse.tcf.util.TCFTask$1.run(TCFTask.java:55)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	... 1 more
+Caused by: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:875)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:10:09.506
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:11:41.776
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:14:10.811
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:20:19.470
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:20:46.996
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:31:44.910
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:38:46.747
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:49:05.065
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:49:51.321
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 11:54:43.585
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 12:09:15.860
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 12:10:08.308
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 12:19:09.247
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 13:18:23.888
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 13:21:09.891
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 13:24:56.417
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 13:49:38.635
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 13:52:00.094
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)

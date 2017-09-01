@@ -14,18 +14,13 @@ sharplcd_t sharplcd;
 
 // ========================== TEST
 
-char heartRate[10];
-int hr_curr_1 = 6;
-int hr_curr_2 = 0;
-
-char text_buffer[6];
+char text_buffer[8];
 int min_1 = 0;
 int sec_1 = 0;
 int min_2 = 0;
 int sec_2 = 0;
 
 // ===============================
-
 /* =====Counts 1ms timeTicks===== */
 volatile uint32_t msTicks = 0;
 
@@ -106,43 +101,30 @@ int main(void)
 			min_1++;
 		}
 
-		text_buffer[0] = min_1 + '0';
-		text_buffer[1] = min_2 + '0';
-		text_buffer[2] = ':';
-		text_buffer[3] = sec_1 + '0';
-		text_buffer[4] = sec_2 + '0';
-		text_buffer[5] = 0;
+		text_buffer[0] = ' ';
+		text_buffer[1] = min_1 + '0';
+		text_buffer[2] = min_2 + '0';
+		text_buffer[3] = ':';
+		text_buffer[4] = sec_1 + '0';
+		text_buffer[5] = sec_2 + '0';
+		text_buffer[6] = 0;
 
-		SHARPLCD_Print(&sharplcd, text_buffer, 9, 0);
+		SHARPLCD_Print(&sharplcd, text_buffer, 80, 0);
 
 		sec_2++;
 
-
-		if (hr_curr_2 > 9)
-		{
-			hr_curr_2 = 0;
-			hr_curr_1++;
-		}
-
-		if (hr_curr_1 == 8 && hr_curr_2 == 0)
-		{
-			hr_curr_1 = 6;
-			hr_curr_2 = 0;
-		}
-
-		heartRate[0] = ' ';
-		heartRate[1] = ' ';
-		heartRate[2] = ' ';
-		heartRate[3] = ' ';
-		heartRate[4] = 'H';
-		heartRate[5] = 'R';
-		heartRate[6] = ':';
-		heartRate[7] = hr_curr_1 + '0';
-		heartRate[8] = hr_curr_2 + '0';
-		heartRate[9] = 0;
-
-		SHARPLCD_Print(&sharplcd, heartRate, 80, 0);
-
-		hr_curr_2++;
+		/*
+		SHARPLCD_Print(&sharplcd, "9:10", 9, 0);
+		Delay(500);
+		SHARPLCD_Print(&sharplcd, "10:25", 9, 0);
+		Delay(500);
+		SHARPLCD_Print(&sharplcd, "22:47", 9, 0);
+		Delay(500);
+		SHARPLCD_Print(&sharplcd, "    HR:70   ", 80, 0);
+		Delay(500);
+		SHARPLCD_Print(&sharplcd, "    HR:72   ", 80, 0);
+		Delay(500);
+		SHARPLCD_Print(&sharplcd, "    HR:74   ", 80, 0);
+		*/
 	}
 }

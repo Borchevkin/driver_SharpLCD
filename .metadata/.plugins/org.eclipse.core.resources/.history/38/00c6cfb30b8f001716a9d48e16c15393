@@ -14,7 +14,7 @@ sharplcd_t sharplcd;
 
 // ========================== TEST
 
-char heartRate[10];
+char heartRate[7];
 int hr_curr_1 = 6;
 int hr_curr_2 = 0;
 
@@ -25,7 +25,6 @@ int min_2 = 0;
 int sec_2 = 0;
 
 // ===============================
-
 /* =====Counts 1ms timeTicks===== */
 volatile uint32_t msTicks = 0;
 
@@ -130,16 +129,13 @@ int main(void)
 			hr_curr_2 = 0;
 		}
 
-		heartRate[0] = ' ';
-		heartRate[1] = ' ';
-		heartRate[2] = ' ';
-		heartRate[3] = ' ';
-		heartRate[4] = 'H';
-		heartRate[5] = 'R';
-		heartRate[6] = ':';
-		heartRate[7] = hr_curr_1 + '0';
-		heartRate[8] = hr_curr_2 + '0';
-		heartRate[9] = 0;
+		heartRate[0] = '	';
+		heartRate[1] = 'H';
+		heartRate[2] = 'R';
+		heartRate[3] = ':';
+		heartRate[4] = hr_curr_1 + '0';
+		heartRate[5] = hr_curr_2 + '0';
+		heartRate[6] = 0;
 
 		SHARPLCD_Print(&sharplcd, heartRate, 80, 0);
 
