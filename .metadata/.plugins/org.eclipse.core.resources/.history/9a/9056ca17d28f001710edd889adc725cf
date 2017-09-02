@@ -75,17 +75,17 @@ int main(void)
 
 		//Display
 		Delay(500);
-		SHARPLCD_Bitmap(&sharplcd, battery_0, 16, 8, 0, 1);
+		SHARPLCD_Bitmap(&sharplcd, battery_0, 16, 8, 18, 1);
 		Delay(500);
-		SHARPLCD_Bitmap(&sharplcd, battery_20, 16, 8, 0, 1);
+		SHARPLCD_Bitmap(&sharplcd, battery_20, 16, 8, 18, 1);
 		Delay(500);
-		SHARPLCD_Bitmap(&sharplcd, battery_40, 16, 8, 0, 1);
+		SHARPLCD_Bitmap(&sharplcd, battery_40, 16, 8, 18, 1);
 		Delay(500);
-		SHARPLCD_Bitmap(&sharplcd, battery_60, 16, 8, 0, 1);
+		SHARPLCD_Bitmap(&sharplcd, battery_60, 16, 8, 18, 1);
 		Delay(500);
-		SHARPLCD_Bitmap(&sharplcd, battery_80, 16, 8, 0, 1);
+		SHARPLCD_Bitmap(&sharplcd, battery_80, 16, 8, 18, 1);
 		Delay(500);
-		SHARPLCD_Bitmap(&sharplcd, battery_100, 16, 8, 0, 1);
+		SHARPLCD_Bitmap(&sharplcd, battery_100, 16, 8, 18, 1);
 		Delay(500);
 
 		if (sec_2 > 9)
@@ -150,8 +150,7 @@ int main(void)
 
 // ============================ TEST FIELD
 
-void SHARPLCD_Rectangle(uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2)
-//TODO
+void SHARPLCD_Rectangle(int x1, int x2, int y1, int y2)
 {
 
 }

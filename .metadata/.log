@@ -1052,3 +1052,21 @@ Caused by: java.lang.Error: Channel is closed
 
 !ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-01 13:52:00.094
 !MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+!SESSION 2017-09-02 12:35:06.457 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-09-02 12:36:15.390
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-09-02 12:37:02.572
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-02 13:29:44.464
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-02 13:30:18.689
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
