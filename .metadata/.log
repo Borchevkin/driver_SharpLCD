@@ -1070,3 +1070,33 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-02 13:30:18.689
 !MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+!SESSION 2017-09-04 12:26:07.182 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.silabs.ss.tool.ide.arm.toolchain.iar 1 0 2017-09-04 12:27:39.044
+!MESSAGE detectIAREWARMFromRegistry: null
+
+!ENTRY com.silabs.ss.platform.content.core 1 0 2017-09-04 12:28:30.236
+!MESSAGE AssetService server URI is: http://devtools.silabs.com/studio/v4/assets/
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-04 15:23:34.123
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-04 16:25:04.503
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-04 17:28:53.236
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-04 17:29:54.338
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-04 17:30:34.633
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2017-09-04 17:32:18.777
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)

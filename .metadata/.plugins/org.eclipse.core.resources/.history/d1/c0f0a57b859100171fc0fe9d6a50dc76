@@ -14,10 +14,9 @@ sharplcd_t sharplcd;
 
 // ========================== TEST
 
-void SHARPLCD_Rectangle(uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2);
 void SHARPLCD_LineDrawH(uint8_t x1, uint8_t x2, uint8_t y);
-void SHARPLCD_DrawPixel(uint8_t x, uint8_t y);
 uint8_t DisplayBuffer[96][12];
+void SHARPLCD_DrawPixel(uint8_t x, uint8_t y);
 
 char heartRate[10];
 int hr_curr_1 = 6;
@@ -149,8 +148,6 @@ int main(void)
 		SHARPLCD_Print(&sharplcd, heartRate, 80, 0);
 
 		hr_curr_2++;
-
-		//SHARPLCD_DrawPixel(3, 45);
 	}
 }
 
@@ -170,37 +167,10 @@ void SHARPLCD_LineDrawH(uint8_t x1, uint8_t x2, uint8_t y)
 
 void SHARPLCD_DrawPixel(uint8_t x, uint8_t y)
 {
-	uint8_t buffer[1];
-
-	//TODO Wrong. Need to rework that somehow
-	//==
 	DisplayBuffer[y][x >> 3] &= ~(0x80 >> (x & 0x7));
-	//==
 
-	SPI1_SetMSBFirst();
+	SHARPLCD_WriteBuffer(sharplcd, y);
 
-	DISPLAY_SetCS();
-
-	USART_SpiTransfer(USART1, 0x80 | 0x40);
-
-	SPI1_SetLSBFirst();
-
-	USART_SpiTransfer(USART1, y);
-
-	SPI1_SetMSBFirst();
-
-	uint8_t j = 0;
-	while (j < 12)
-	{
-		buffer[0] = DisplayBuffer[y][j];
-		USART_SpiTransfer(USART1, buffer[0]);
-		j++;
-	}
-
-	USART_SpiTransfer(USART1, 0);
-	USART_SpiTransfer(USART1, 0);
-
-	DISPLAY_ClearCS();
 }
 
 // =======================================
