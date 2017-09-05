@@ -74,9 +74,39 @@ void SHARPLCD_SendTrailer(sharplcd_t * sharplcd)
 
 }
 
-void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArray)
+void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t x1, uint8_t x2, uint8_t y)
 {
 	uint8_t buffer[1];
+	uint16_t LineBuffer[12] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
+	uint16_t xi = 0;
+	int x_index_min = x1 >> 3;
+	int x_index_max = x2 >> 3;
+	int ucfirst_x_byte, uclast_x_byte;
+
+	ucfirst_x_byte = (0xFF >> (x1 & 0x7));
+	uclast_x_byte = (0xFF << (7 - (x2 & 0x7)));
+
+
+	if(x_index_min != x_index_max)
+	{
+	LineBuffer[x_index_min] = ~ucfirst_x_byte;
+	xi = x_index_min + 1;
+
+	//write middle bytes
+	for(; xi < x_index_max - 1; xi++)
+	{
+		LineBuffer[xi] = 0x00;
+	}
+	LineBuffer[xi] = 0x00;
+
+	//write last byte
+	LineBuffer[x_index_max] = ~uclast_x_byte;
+	}
+	else
+	{
+		ucfirst_x_byte &= uclast_x_byte;
+		LineBuffer[x_index_min] = ~ucfirst_x_byte;
+	}
 
 	//1. Set MSB byte order for command
 	sharplcd->SetMSBFirst();
@@ -93,14 +123,19 @@ void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t lineNo, uint8_t * lineArra
 	sharplcd->SetLSBFirst();
 
 	//5. Send number of line. Warning! Number of line starts from 1!
-	buffer[0] = lineNo + 1;
+	buffer[0] = y + 1;
 	sharplcd->Write(buffer, 1);
 
 	//6. Set back MSB
 	sharplcd->SetMSBFirst();
 
 	//7. Write line data
-	sharplcd->Write(lineArray, sharplcd->bytesPerLine);
+	uint8_t j = 0;
+	while (j < (SHARPLCD_XRES/8)) {           // write pixels / 8 bytes
+		buffer[0] = LineBuffer[j];
+		sharplcd->Write(buffer, 1);
+		j++;
+	}
 
 	//8. Trailer
 	buffer[0] = SHARPLCD_NULL_BYTE;
@@ -236,3 +271,12 @@ void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, uint8_t lineNo, uint
 	}
 }
 
+void SHARPLCD_RectangleFilled(sharplcd_t *sharplcd, uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2)
+{
+	while (y1 < y2)
+	{
+		SHARPLCD_WriteLine(sharplcd, x1, x2, y1);
+		y1++;
+	}
+	SHARPLCD_WriteLine(sharplcd, x1, x2, y2);
+}

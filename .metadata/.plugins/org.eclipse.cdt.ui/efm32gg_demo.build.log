@@ -1,4 +1,4 @@
-17:32:16 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+19:01:45 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
@@ -22,8 +22,8 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-   9568	    124	   1292	  10984	   2ae8	efm32gg_demo.axf
+  10204	    124	    140	  10468	   28e4	efm32gg_demo.axf
  
 
-17:32:18 Build Finished (took 1s.858ms)
+19:01:46 Build Finished (took 1s.829ms)
 

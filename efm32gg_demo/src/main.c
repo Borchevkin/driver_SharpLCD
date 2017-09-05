@@ -14,10 +14,8 @@ sharplcd_t sharplcd;
 
 // ========================== TEST
 
-void SHARPLCD_Rectangle(uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2);
-void SHARPLCD_LineDrawH(uint8_t x1, uint8_t x2, uint8_t y);
-void SHARPLCD_DrawPixel(uint8_t x, uint8_t y);
-uint8_t DisplayBuffer[96][12];
+void SHARPLCD_AddLineToBuff(uint8_t x1, uint8_t x2, uint8_t y);
+void ClearFrameBuffer(void);
 
 char heartRate[10];
 int hr_curr_1 = 6;
@@ -81,17 +79,23 @@ int main(void)
 		//Display
 		Delay(500);
 		SHARPLCD_Bitmap(&sharplcd, battery_0, 16, 8, 0, 1);
+		SHARPLCD_RectangleFilled(&sharplcd, 0, 4, 18, 22);
 		Delay(500);
 		SHARPLCD_Bitmap(&sharplcd, battery_20, 16, 8, 0, 1);
+		SHARPLCD_RectangleFilled(&sharplcd, 4, 8, 18, 22);
 		Delay(500);
 		SHARPLCD_Bitmap(&sharplcd, battery_40, 16, 8, 0, 1);
+		SHARPLCD_RectangleFilled(&sharplcd, 8, 12, 18, 22);
 		Delay(500);
 		SHARPLCD_Bitmap(&sharplcd, battery_60, 16, 8, 0, 1);
+		SHARPLCD_RectangleFilled(&sharplcd, 12, 16, 18, 22);
 		Delay(500);
 		SHARPLCD_Bitmap(&sharplcd, battery_80, 16, 8, 0, 1);
+		SHARPLCD_RectangleFilled(&sharplcd, 16, 20, 18, 22);
 		Delay(500);
 		SHARPLCD_Bitmap(&sharplcd, battery_100, 16, 8, 0, 1);
-		Delay(500);
+		SHARPLCD_RectangleFilled(&sharplcd, 20, 24, 18, 22);
+
 
 		if (sec_2 > 9)
 		{
@@ -150,57 +154,80 @@ int main(void)
 
 		hr_curr_2++;
 
-		//SHARPLCD_DrawPixel(3, 45);
+
+		//ClearFrameBuffer();
+		//SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+		//SHARPLCD_AddLineToBuff(20,80,40);
+		//SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+		//SHARPLCD_AddLineToBuff(40,60,40);
+		//SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+
+		//SHARPLCD_WriteLine(&sharplcd, 5, 90, 24);
+		//SHARPLCD_RectangleFilled(&sharplcd, 20, 40, 20, 40);
 	}
 }
 
 
 // ============================ TEST FIELD
 
-void SHARPLCD_Rectangle(uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2)
-//TODO
+void ClearFrameBuffer()
 {
-
-}
-
-void SHARPLCD_LineDrawH(uint8_t x1, uint8_t x2, uint8_t y)
-{
-
-}
-
-void SHARPLCD_DrawPixel(uint8_t x, uint8_t y)
-{
-	uint8_t buffer[1];
-
-	//TODO Wrong. Need to rework that somehow
-	//==
-	DisplayBuffer[y][x >> 3] &= ~(0x80 >> (x & 0x7));
-	//==
-
-	SPI1_SetMSBFirst();
-
-	DISPLAY_SetCS();
-
-	USART_SpiTransfer(USART1, 0x80 | 0x40);
-
-	SPI1_SetLSBFirst();
-
-	USART_SpiTransfer(USART1, y);
-
-	SPI1_SetMSBFirst();
-
-	uint8_t j = 0;
-	while (j < 12)
+	int z = 0;
+	int w = 0;
+	while(z < 95)
 	{
-		buffer[0] = DisplayBuffer[y][j];
-		USART_SpiTransfer(USART1, buffer[0]);
-		j++;
+		frameBuffer[z][w] = 0xff;
+		w++;
+		if (w > 11)
+		{
+			w = 0;
+			z++;
+		}
+	}
+}
+
+void SHARPLCD_AddLineToBuff(uint8_t x1, uint8_t x2, uint8_t y)
+{
+	uint16_t LineBuffer[12] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
+	uint16_t xi = 0;
+
+
+	int x_index_min = x1 >> 3;
+	int x_index_max = x2 >> 3;
+	int ucfirst_x_byte, uclast_x_byte;
+
+	ucfirst_x_byte = (0xFF >> (x1 & 0x7));
+	uclast_x_byte = (0xFF << (7 - (x2 & 0x7)));
+
+
+	if(x_index_min != x_index_max)
+	{
+	LineBuffer[x_index_min] = ~ucfirst_x_byte;
+	xi = x_index_min + 1;
+
+	//write middle bytes
+	for(; xi < x_index_max - 1; xi++)
+	{
+		LineBuffer[xi] = 0x00;
+	}
+	LineBuffer[xi] = 0x00;
+
+	//write last byte
+	LineBuffer[x_index_max] = ~uclast_x_byte;
+	}
+	else
+	{
+		ucfirst_x_byte &= uclast_x_byte;
+		LineBuffer[x_index_min] = ~ucfirst_x_byte;
 	}
 
-	USART_SpiTransfer(USART1, 0);
-	USART_SpiTransfer(USART1, 0);
-
-	DISPLAY_ClearCS();
+	while (x_index_min < x_index_max)
+	{
+		frameBuffer[y][x_index_min] &= LineBuffer [x_index_min];
+		x_index_min++;
+	}
+	frameBuffer[y][x_index_min] &= LineBuffer [x_index_min];
 }
+
 
 // =======================================
