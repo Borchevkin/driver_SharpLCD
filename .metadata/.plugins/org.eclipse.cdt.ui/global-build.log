@@ -1,56 +1,56 @@
-14:38:00 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:25:25 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:164:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'uint16_t (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:168:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'uint16_t (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:172:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'uint16_t (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:176:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'uint16_t (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:180:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'uint16_t (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:184:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'uint16_t (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:188:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'uint16_t (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 Finished building: ../src/main.c
@@ -72,64 +72,176 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-  11328	   1276	    152	  12756	   31d4	efm32gg_demo.axf
+  11444	    124	   2444	  14012	   36bc	efm32gg_demo.axf
  
-14:38:04 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:25:36 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 make: Nothing to be done for `all'.
-14:39:33 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:26:59 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  10284	    124	   2444	  12852	   3234	efm32gg_demo.axf
+ 
+15:28:20 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/bsp.c
+Building file: ../src/main.c
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: GNU ARM C Compiler
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/bsp.d" -MT"src/bsp.o" -o "src/bsp.o" "../src/bsp.c"
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+../src/main.c: In function 'main':
+../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/sharpLCD.c
+Finished building: ../src/bsp.c
+ 
+ 
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  11432	    124	   1292	  12848	   3230	efm32gg_demo.axf
+ 
+15:30:02 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
 ../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 ../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 ../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 ../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 ../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 ../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 ../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 Finished building: ../src/main.c
@@ -151,61 +263,61 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-  11332	   1276	    152	  12760	   31d8	efm32gg_demo.axf
+  11432	    124	   1292	  12848	   3230	efm32gg_demo.axf
  
-14:40:51 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:34:52 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 Finished building: ../src/main.c
@@ -227,61 +339,64 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-  11332	   1276	    152	  12760	   31d8	efm32gg_demo.axf
+  11436	    124	   1292	  12852	   3234	efm32gg_demo.axf
  
-14:42:02 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:37:38 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+make: Nothing to be done for `all'.
+15:41:50 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 Finished building: ../src/main.c
@@ -303,61 +418,40 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-  11332	   1276	    152	  12760	   31d8	efm32gg_demo.axf
+  11916	    124	   1292	  13332	   3414	efm32gg_demo.axf
  
-14:44:29 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:46:10 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
- void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
-      ^
-../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-                              ^
-In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
- void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
-      ^
-../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-                              ^
-In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
- void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
-      ^
-../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-                              ^
-In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 Finished building: ../src/main.c
@@ -379,61 +473,40 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-  11328	   1276	    152	  12756	   31d4	efm32gg_demo.axf
+  11328	    124	   1292	  12744	   31c8	efm32gg_demo.axf
  
-14:46:49 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:46:53 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
- void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
-      ^
-../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-                              ^
-In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
- void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
-      ^
-../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-                              ^
-In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
- void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
-      ^
-../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-                              ^
-In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 Finished building: ../src/main.c
@@ -455,61 +528,61 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-  11332	   1276	    152	  12760	   31d8	efm32gg_demo.axf
+  11328	    124	   1292	  12744	   31c8	efm32gg_demo.axf
  
-14:49:08 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+15:47:58 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:165:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:169:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:173:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:177:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:181:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:185:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
-../src/main.c:189:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
-   SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
                               ^
 In file included from ../src/main.c:9:0:
-C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:77:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
  void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
       ^
 Finished building: ../src/main.c
@@ -531,5 +604,1508 @@ arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
 Running size tool
 arm-none-eabi-size "efm32gg_demo.axf"
    text	   data	    bss	    dec	    hex	filename
-  11332	   1276	    152	  12760	   31d8	efm32gg_demo.axf
+  11916	    124	   1292	  13332	   3414	efm32gg_demo.axf
+ 
+15:49:32 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  11876	    124	   1292	  13292	   33ec	efm32gg_demo.axf
+ 
+15:50:26 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  11916	    124	   1292	  13332	   3414	efm32gg_demo.axf
+ 
+15:51:36 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  11916	    124	   1292	  13332	   3414	efm32gg_demo.axf
+ 
+15:53:46 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+Finished building: ../src/sharpLCD.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  12004	    124	   1292	  13420	   346c	efm32gg_demo.axf
+ 
+15:56:26 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  12004	    124	   1292	  13420	   346c	efm32gg_demo.axf
+ 
+15:57:18 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  12004	    124	   1292	  13420	   346c	efm32gg_demo.axf
+ 
+16:01:15 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:137:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8324	    124	   1292	   9740	   260c	efm32gg_demo.axf
+ 
+16:02:02 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:158:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:162:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:166:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:170:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:174:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:178:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+../src/main.c:182:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  10836	    124	   1292	  12252	   2fdc	efm32gg_demo.axf
+ 
+16:04:08 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8408	    124	   1292	   9824	   2660	efm32gg_demo.axf
+ 
+16:04:57 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 0);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8408	    124	   1292	   9824	   2660	efm32gg_demo.axf
+ 
+16:05:19 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8408	    124	   1292	   9824	   2660	efm32gg_demo.axf
+ 
+16:17:00 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/sharpLCD.c
+ 
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8468	    124	   1292	   9884	   269c	efm32gg_demo.axf
+ 
+16:19:08 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+Finished building: ../src/sharpLCD.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8464	    124	   1292	   9880	   2698	efm32gg_demo.axf
+ 
+16:20:15 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8464	    124	   1292	   9880	   2698	efm32gg_demo.axf
+ 
+16:20:37 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8464	    124	   1292	   9880	   2698	efm32gg_demo.axf
+ 
+16:22:43 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8464	    124	   1292	   9880	   2698	efm32gg_demo.axf
+ 
+16:23:01 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8464	    124	   1292	   9880	   2698	efm32gg_demo.axf
+ 
+16:31:45 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:147:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8744	    124	   1292	  10160	   27b0	efm32gg_demo.axf
+ 
+16:32:26 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:147:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8744	    124	   1292	  10160	   27b0	efm32gg_demo.axf
+ 
+16:33:25 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:145:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8488	    124	   1292	   9904	   26b0	efm32gg_demo.axf
+ 
+16:35:21 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:145:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8488	    124	   1292	   9904	   26b0	efm32gg_demo.axf
+ 
+16:35:37 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:145:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8488	    124	   1292	   9904	   26b0	efm32gg_demo.axf
+ 
+16:37:33 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:145:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/sharpLCD.c
+ 
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8488	    124	   1292	   9904	   26b0	efm32gg_demo.axf
+ 
+16:38:06 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+../src/main.c: In function 'main':
+../src/main.c:145:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/sharpLCD.c
+ 
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8492	    124	   1292	   9908	   26b4	efm32gg_demo.axf
+ 
+16:38:24 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:145:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8492	    124	   1292	   9908	   26b4	efm32gg_demo.axf
+ 
+16:41:18 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:145:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:82:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8492	    124	   1292	   9908	   26b4	efm32gg_demo.axf
+ 
+16:42:08 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+Finished building: ../src/sharpLCD.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8488	    124	   1292	   9904	   26b0	efm32gg_demo.axf
+ 
+16:42:45 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+Finished building: ../src/sharpLCD.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8480	    124	   1292	   9896	   26a8	efm32gg_demo.axf
+ 
+16:43:47 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+Finished building: ../src/sharpLCD.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8488	    124	   1292	   9904	   26b0	efm32gg_demo.axf
+ 
+16:54:10 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/sharpLCD.c
+Building file: ../src/main.c
+Building file: ../src/bsp.c
+Invoking: GNU ARM C Compiler
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/bsp.d" -MT"src/bsp.o" -o "src/bsp.o" "../src/bsp.c"
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:148:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:84:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/sharpLCD.c
+Finished building: ../src/bsp.c
+ 
+ 
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8856	    124	   1292	  10272	   2820	efm32gg_demo.axf
+ 
+16:54:57 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:149:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:84:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8856	    124	   1292	  10272	   2820	efm32gg_demo.axf
+ 
+16:56:16 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+../src/main.c: In function 'main':
+../src/main.c:149:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:84:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/sharpLCD.c
+ 
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8860	    124	   1292	  10276	   2824	efm32gg_demo.axf
+ 
+16:57:14 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:149:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:84:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8860	    124	   1292	  10276	   2824	efm32gg_demo.axf
+ 
+16:58:20 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:150:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:84:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+   8868	    124	   1296	  10288	   2830	efm32gg_demo.axf
+ 
+17:26:36 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:151:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:84:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  10044	    124	   1296	  11464	   2cc8	efm32gg_demo.axf
+ 
+17:28:58 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:151:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:84:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  10044	    124	   1296	  11464	   2cc8	efm32gg_demo.axf
+ 
+17:35:20 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32gg_demo ****
+make -j4 all 
+Building file: ../src/bsp.c
+Building file: ../src/main.c
+Building file: ../src/sharpLCD.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/bsp.d" -MT"src/bsp.o" -o "src/bsp.o" "../src/bsp.c"
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32GG990F1024=1' -I"C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc" -I"C:/LocalProject/SHARP96/driver_SharpLCD/efm32gg_demo/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/sharpLCD.d" -MT"src/sharpLCD.o" -o "src/sharpLCD.o" "../src/sharpLCD.c"
+../src/main.c: In function 'main':
+../src/main.c:151:30: warning: passing argument 2 of 'SHARPLCD_Bitmap' from incompatible pointer type
+   SHARPLCD_Bitmap(&sharplcd, sharplcd.frameBuffer, 96, 96, 0, 1);
+                              ^
+In file included from ../src/main.c:9:0:
+C:\LocalProject\SHARP96\driver_SharpLCD\efm32gg_demo\inc/sharpLCD.h:85:6: note: expected 'const unsigned char *' but argument is of type 'char (*)[12]'
+ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
+      ^
+Finished building: ../src/bsp.c
+Finished building: ../src/sharpLCD.c
+ 
+ 
+Finished building: ../src/main.c
+ 
+Building target: efm32gg_demo.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "efm32gg_demo.ld" -Xlinker --gc-sections -Xlinker -Map="efm32gg_demo.map" --specs=nano.specs -o efm32gg_demo.axf "./CMSIS/EFM32GG/startup_gcc_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/InitDevice.o" "./src/bsp.o" "./src/main.o" "./src/sharpLCD.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: efm32gg_demo.axf
+ 
+Building hex file: efm32gg_demo.hex
+arm-none-eabi-objcopy -O ihex "efm32gg_demo.axf" "efm32gg_demo.hex"
+ 
+Building bin file: efm32gg_demo.bin
+arm-none-eabi-objcopy -O binary "efm32gg_demo.axf" "efm32gg_demo.bin"
+ 
+Building s37 file: efm32gg_demo.s37
+arm-none-eabi-objcopy -O srec "efm32gg_demo.axf" "efm32gg_demo.s37"
+ 
+Running size tool
+arm-none-eabi-size "efm32gg_demo.axf"
+   text	   data	    bss	    dec	    hex	filename
+  10044	    124	   1296	  11464	   2cc8	efm32gg_demo.axf
  

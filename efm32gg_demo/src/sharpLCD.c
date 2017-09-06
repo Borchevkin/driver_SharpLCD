@@ -8,7 +8,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "sharpLCD.h"
-//#include "font.h"
+#include "font.h"
+
 
 void SHARPLCD_Init(sharplcd_t * sharplcd)
 {
@@ -242,7 +243,7 @@ void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, uint8_t lineNo, uint
 			}
 
 			c = c - 32;                                      // convert character to index in font table
-			//b = font8x8[(c*8)+k];                            // retrieve byte defining one line of character
+			b = font8x8[(c*8)+k];                            // retrieve byte defining one line of character
 
 			if (!(options & SHARPLCD_DISP_INVERT)) {                  // invert bits if DISP_INVERT is _NOT_ selected
 				b = ~b;// pixels are LOW active
@@ -279,4 +280,168 @@ void SHARPLCD_RectangleFilled(sharplcd_t *sharplcd, uint8_t x1, uint8_t x2, uint
 		y1++;
 	}
 	SHARPLCD_WriteLine(sharplcd, x1, x2, y2);
+}
+
+void SHARPLCD_ClearFrameBuffer(sharplcd_t * sharplcd)
+{
+	int z = 0;
+	int w = 0;
+	while(z < (SHARPLCD_XRES - 1))
+	{
+		sharplcd->frameBuffer[z][w] = 0xff;
+		w++;
+		if (w > (SHARPLCD_BYTES_LINE - 1))
+		{
+			w = 0;
+			z++;
+		}
+	}
+}
+
+void SHARPLCD_AddLineToBuffer(sharplcd_t * sharplcd, uint8_t x1, uint8_t x2, uint8_t y)
+{
+	uint16_t LineBuffer[12] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
+	uint16_t xi = 0;
+
+
+	int x_index_min = x1 >> 3;
+	int x_index_max = x2 >> 3;
+	int ucfirst_x_byte, uclast_x_byte;
+
+	ucfirst_x_byte = (0xFF >> (x1 & 0x7));
+	uclast_x_byte = (0xFF << (7 - (x2 & 0x7)));
+
+
+	if(x_index_min != x_index_max)
+	{
+	LineBuffer[x_index_min] = ~ucfirst_x_byte;
+	xi = x_index_min + 1;
+
+	//write middle bytes
+	for(; xi < x_index_max - 1; xi++)
+	{
+		LineBuffer[xi] = 0x00;
+	}
+	LineBuffer[xi] = 0x00;
+
+	//write last byte
+	LineBuffer[x_index_max] = ~uclast_x_byte;
+	}
+	else
+	{
+		ucfirst_x_byte &= uclast_x_byte;
+		LineBuffer[x_index_min] = ~ucfirst_x_byte;
+	}
+
+	while (x_index_min < x_index_max)
+	{
+		sharplcd->frameBuffer[y][x_index_min] &= LineBuffer [x_index_min];
+		x_index_min++;
+	}
+	sharplcd->frameBuffer[y][x_index_min] &= LineBuffer [x_index_min];
+}
+
+void SHARPLCD_AddRectToBuffer(sharplcd_t * sharplcd, uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2)
+{
+	while (y1 < y2)
+	{
+		SHARPLCD_AddLineToBuffer(sharplcd, x1, x2, y1);
+		y1++;
+	}
+	SHARPLCD_AddLineToBuffer(sharplcd, x1, x2, y2);
+}
+
+void SHARPLCD_AddTextToBuffer(sharplcd_t * sharplcd, const char* text, uint8_t lineNo, uint8_t options)
+{
+	unsigned char c, b, i, j, k, z, w;
+	z = 0;
+	w = 12;
+
+	k = 0;
+	while (k < 8 && lineNo < SHARPLCD_YRES) { // loop for 8 character lines while within display
+		i = 0;
+		j = 0;
+		while (j < (SHARPLCD_XRES/8) && (c = text[i]) != 0) {     // while we did not reach end of line or string
+			if (c < ' ' || c > 'Z') {                        // invalid characters are replace with SPACE
+				c = ' ';
+			}
+
+			c = c - 32;                                      // convert character to index in font table
+			b = font8x8[(c*8)+k];                            // retrieve byte defining one line of character
+
+			if (!(options == SHARPLCD_DISP_INVERT)) {                  // invert bits if DISP_INVERT is _NOT_ selected
+				b = ~b;// pixels are LOW active
+			}
+
+			if (!((options & 2) && (c != 0))) {           // double width rendering if DISP_WIDE and character is not SPACE
+				sharplcd->m_buffer[j] = b;                // store pixels in line buffer
+				j++;                                      // we've written two bytes to buffer
+			}
+
+			i++;                                             // next character
+		}
+
+		while (j < (SHARPLCD_XRES/8)) {                           // pad line for empty characters
+			sharplcd->m_buffer[j] = 0xff;
+			j++;
+		}
+
+		if (!(options & SHARPLCD_DISP_INVERT)) {
+			while (z < w)
+			{
+				sharplcd->frameBuffer[lineNo][z] &= sharplcd->m_buffer[z];
+				z++;
+			}
+		}
+		else if (options & SHARPLCD_DISP_OVERWRITE){ // =========== Overwrite!
+			while (z < w)
+			{
+				sharplcd->frameBuffer[lineNo][z] = sharplcd->m_buffer[z];
+				z++;
+			}
+		}
+		else {
+			while (z < w)
+			{
+				sharplcd->frameBuffer[lineNo][z] |= sharplcd->m_buffer[z];
+				z++;
+			}
+		}
+
+		z = 0;
+		lineNo++;
+		k++;                                                 // next pixel line
+		}
+}
+
+
+void SHARPLCD_AddArrayToBuffer(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options)
+{
+	uint16_t b;
+	uint16_t i = 0;
+	uint16_t p = 0;
+	uint16_t x = width/8;
+	uint8_t z = 0;
+	uint8_t w = 12;
+
+	while (height > 0 && lineNo < SHARPLCD_YRES) {
+		while (i < SHARPLCD_XRES/8 && i < x) {
+			b = bitmap[p+i];
+			if (!(options & SHARPLCD_DISP_INVERT)) {         // invert bits if DISP_INVERT is _NOT_ selected
+				b = ~b;// pixels are LOW active
+			}
+			sharplcd->m_buffer[i] = b;
+			i++;
+		}
+		while (z < w)
+		{
+			sharplcd->frameBuffer[lineNo][z] &= sharplcd->m_buffer[z];
+			z++;
+		}
+		z = 0;
+		p += x;
+		i = 0;
+		height--;
+		lineNo++;
+	}
 }

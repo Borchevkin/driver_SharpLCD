@@ -21,6 +21,8 @@
 //Options
 #define SHARPLCD_DISP_INVERT	0x01
 #define SHARPLCD_DISP_HIGH		0x04
+#define SHARPLCD_DISP_OVERWRITE	0x05
+
 
 //Resolution
 #define SHARPLCD_XRES 			(96)									//pixels per horizontal line
@@ -45,7 +47,7 @@ typedef struct {
 	uint16_t bufferSize;
 	uint8_t currentVcom;
 	uint8_t m_buffer[SHARPLCD_XRES/8];
-
+	char frameBuffer[SHARPLCD_YRES][SHARPLCD_BYTES_LINE];
 
 	/* Last values */
 
@@ -72,6 +74,12 @@ void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd);
 void SHARPLCD_SendTrailer(sharplcd_t * sharplcd);
 void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t x1, uint8_t x2, uint8_t y);
 void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame);
+
+void SHARPLCD_ClearFrameBuffer(sharplcd_t * sharplcd);
+void SHARPLCD_AddLineToBuffer(sharplcd_t * sharplcd, uint8_t x1, uint8_t x2, uint8_t y);
+void SHARPLCD_AddRectToBuffer(sharplcd_t * sharplcd, uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2);
+void SHARPLCD_AddTextToBuffer(sharplcd_t * sharplcd, const char* text, uint8_t lineNo, uint8_t options);
+void SHARPLCD_AddArrayToBuffer(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
 
 void SHARPLCD_RectangleFilled(sharplcd_t *sharplcd, uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2);
 void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t width, uint8_t height, uint8_t lineNo, uint8_t options);
