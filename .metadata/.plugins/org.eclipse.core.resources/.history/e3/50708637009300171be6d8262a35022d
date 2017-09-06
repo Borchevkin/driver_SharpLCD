@@ -181,10 +181,6 @@ int main(void)
 		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
 		Delay(500);
 
-		SHARPLCD_AddTextToBuff("    TEXT   ",30,1);
-		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-		Delay(500);
-
 		ClearFrameBuffer();
 		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
 	}
@@ -300,7 +296,7 @@ void SHARPLCD_AddTextToBuff(const char* text, uint8_t lineNo, uint8_t options)
 
 		while (z < w)
 		{
-			frameBuffer[lineNo][z] |= m_buffer[z];
+			frameBuffer[lineNo][z] &= m_buffer[z];
 			z++;
 		}
 

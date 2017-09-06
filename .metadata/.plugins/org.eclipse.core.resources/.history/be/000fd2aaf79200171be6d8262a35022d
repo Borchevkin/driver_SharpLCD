@@ -8,7 +8,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "sharpLCD.h"
-//#include "font.h"
+#include "font.h"
 
 void SHARPLCD_Init(sharplcd_t * sharplcd)
 {
@@ -242,7 +242,7 @@ void SHARPLCD_Print(sharplcd_t *sharplcd, const char* text, uint8_t lineNo, uint
 			}
 
 			c = c - 32;                                      // convert character to index in font table
-			//b = font8x8[(c*8)+k];                            // retrieve byte defining one line of character
+			b = font8x8[(c*8)+k];                            // retrieve byte defining one line of character
 
 			if (!(options & SHARPLCD_DISP_INVERT)) {                  // invert bits if DISP_INVERT is _NOT_ selected
 				b = ~b;// pixels are LOW active

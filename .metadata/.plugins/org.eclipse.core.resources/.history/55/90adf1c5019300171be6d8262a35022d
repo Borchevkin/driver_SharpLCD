@@ -181,7 +181,7 @@ int main(void)
 		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
 		Delay(500);
 
-		SHARPLCD_AddTextToBuff("    TEXT   ",30,1);
+		SHARPLCD_AddTextToBuff("    TEXT",30,1);
 		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
 		Delay(500);
 

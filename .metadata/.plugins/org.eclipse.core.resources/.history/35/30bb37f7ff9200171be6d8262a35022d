@@ -10,17 +10,12 @@
 #include "bsp.h"
 #include "testFrame.h"
 
-#include "font.h"
-
 sharplcd_t sharplcd;
 
 // ========================== TEST
 
 void SHARPLCD_AddLineToBuff(uint8_t x1, uint8_t x2, uint8_t y);
 void SHARPLCD_AddRectToBuff(uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2);
-void SHARPLCD_AddTextToBuff(const char* text, uint8_t lineNo, uint8_t options);
-uint8_t m_buffer[12];
-
 void ClearFrameBuffer(void);
 
 char heartRate[10];
@@ -181,10 +176,6 @@ int main(void)
 		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
 		Delay(500);
 
-		SHARPLCD_AddTextToBuff("    TEXT   ",30,1);
-		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
-		Delay(500);
-
 		ClearFrameBuffer();
 		SHARPLCD_Bitmap(&sharplcd, frameBuffer, 96, 96, 0, 1);
 	}
@@ -262,52 +253,5 @@ void SHARPLCD_AddRectToBuff(uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2)
 	SHARPLCD_AddLineToBuff(x1, x2, y2);
 }
 
-void SHARPLCD_AddTextToBuff(const char* text, uint8_t lineNo, uint8_t options)
-{
-	unsigned char c, b, i, j, k, z, w;
-	z = 0;
-	w = 12;
-
-	k = 0;
-	while (k < 8 && lineNo < SHARPLCD_YRES) { // loop for 8 character lines while within display
-		i = 0;
-		j = 0;
-		while (j < (SHARPLCD_XRES/8) && (c = text[i]) != 0) {     // while we did not reach end of line or string
-			if (c < ' ' || c > 'Z') {                        // invalid characters are replace with SPACE
-				c = ' ';
-			}
-
-			c = c - 32;                                      // convert character to index in font table
-			b = font8x8[(c*8)+k];                            // retrieve byte defining one line of character
-
-			if (!(options & SHARPLCD_DISP_INVERT)) {                  // invert bits if DISP_INVERT is _NOT_ selected
-				b = ~b;// pixels are LOW active
-			}
-
-			if (!((options & 2) && (c != 0))) {           // double width rendering if DISP_WIDE and character is not SPACE
-				m_buffer[j] = b;                // store pixels in line buffer
-				j++;                                      // we've written two bytes to buffer
-			}
-
-			i++;                                             // next character
-		}
-
-		while (j < (SHARPLCD_XRES/8)) {                           // pad line for empty characters
-			m_buffer[j] = 0xff;
-			j++;
-		}
-
-
-		while (z < w)
-		{
-			frameBuffer[lineNo][z] |= m_buffer[z];
-			z++;
-		}
-
-		z = 0;
-		lineNo++;
-		k++;                                                 // next pixel line
-		}
-}
 
 // =======================================
