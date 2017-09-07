@@ -73,7 +73,7 @@ void SHARPLCD_Clear(sharplcd_t * sharplcd);
 void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd);
 void SHARPLCD_SendTrailer(sharplcd_t * sharplcd);
 void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t x1, uint8_t x2, uint8_t y);
-void SHARPLCD_ShowFrame(sharplcd_t *sharplcd);
+void SHARPLCD_ShowFrame(sharplcd_t *sharplcd, uint8_t frame);
 
 void SHARPLCD_ClearFrameBuffer(sharplcd_t * sharplcd);
 void SHARPLCD_AddLineToBuffer(sharplcd_t * sharplcd, uint8_t x1, uint8_t x2, uint8_t y);

@@ -62,7 +62,7 @@ void SHARPLCD_Clear(sharplcd_t * sharplcd)
 
 void SHARPLCD_ShowFrame(sharplcd_t *sharplcd)
 {
-	SHARPLCD_Bitmap(sharplcd, sharplcd->frameBuffer, SHARPLCD_XRES, SHARPLCD_YRES, 0, SHARPLCD_DISP_INVERT);
+	SHARPLCD_Bitmap(sharplcd, sharplcd->frameBuffer, 96, 96, 0, 0);
 }
 
 void SHARPLCD_SendWriteCommand(sharplcd_t * sharplcd)
@@ -393,7 +393,7 @@ void SHARPLCD_AddTextToBuffer(sharplcd_t * sharplcd, const char* text, uint8_t l
 				z++;
 			}
 		}
-		else if (options == SHARPLCD_DISP_OVERWRITE){ // =========== Overwrite!
+		else if (options & SHARPLCD_DISP_OVERWRITE){ // =========== Overwrite!
 			while (z < w)
 			{
 				sharplcd->frameBuffer[lineNo][z] = sharplcd->m_buffer[z];

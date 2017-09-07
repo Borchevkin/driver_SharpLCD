@@ -393,13 +393,13 @@ void SHARPLCD_AddTextToBuffer(sharplcd_t * sharplcd, const char* text, uint8_t l
 				z++;
 			}
 		}
-		else if (options == SHARPLCD_DISP_OVERWRITE){ // =========== Overwrite!
-			while (z < w)
-			{
-				sharplcd->frameBuffer[lineNo][z] = sharplcd->m_buffer[z];
-				z++;
-			}
-		}
+		//else if (options & SHARPLCD_DISP_OVERWRITE){ // =========== Overwrite!
+			//while (z < w)
+			//{
+			//	sharplcd->frameBuffer[lineNo][z] = sharplcd->m_buffer[z];
+			//	z++;
+			//}
+		//}
 		else {
 			while (z < w)
 			{

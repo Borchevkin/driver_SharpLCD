@@ -144,7 +144,7 @@ int main(void)
 		heartRate[10] =  ' ';
 		heartRate[11] = 0;
 
-		SHARPLCD_AddTextToBuffer(&sharplcd, heartRate, 40, 1);
+		SHARPLCD_AddTextToBuffer(&sharplcd, heartRate, 48, 1);
 
 		hr_curr_2++;
 

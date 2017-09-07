@@ -106,14 +106,11 @@ int main(void)
 		text_buffer[7] = sec_2 + '0';
 		text_buffer[8] = 0;
 
-		SHARPLCD_AddTextToBuffer(&sharplcd, text_buffer, 0, 5);
+		//SHARPLCD_AddTextToBuffer(&sharplcd, text_buffer, 0, 5);
 
 		// ============ BATTERY
-		if ((hr_curr_2 % 2) == 0)
-		SHARPLCD_AddArrayToBuffer(&sharplcd, battery_0, 96, 8, 0, 1);
-		else
-		SHARPLCD_AddArrayToBuffer(&sharplcd, battery_100, 96, 8, 0, 1);
-		SHARPLCD_AddArrayToBuffer(&sharplcd, heart, 96, 96, 0, 1);
+		//SHARPLCD_AddArrayToBuffer(&sharplcd, battery_0, 96, 8, 0, 1);
+		//SHARPLCD_AddArrayToBuffer(&sharplcd, heart, 96, 96, 0, 1);
 		// ====================
 
 		sec_2++;
@@ -136,20 +133,39 @@ int main(void)
 		heartRate[2] = ' ';
 		heartRate[3] = ' ';
 		heartRate[4] = ' ';
-		heartRate[5] = hr_curr_1 + '0';
-		heartRate[6] = hr_curr_2 + '0';
+		heartRate[5] = ' ';
+		heartRate[6] = ' ';
 		heartRate[7] = ' ';
-		heartRate[8] = ' ';
-		heartRate[9] = ' ';
-		heartRate[10] =  ' ';
+		heartRate[8] = '/';
+		heartRate[9] = hr_curr_1 + '0';
+		heartRate[10] =  hr_curr_2 + '0';
 		heartRate[11] = 0;
 
-		SHARPLCD_AddTextToBuffer(&sharplcd, heartRate, 40, 1);
+		//SHARPLCD_AddTextToBuffer(&sharplcd, heartRate, 0, 0);
 
 		hr_curr_2++;
 
 
 		Delay(500);
+
+		SHARPLCD_AddRectToBuffer(&sharplcd, 1, 50, 1, 30);
+
+		SHARPLCD_AddTextToBuffer(&sharplcd, "TEXT", 0, 0);
+		SHARPLCD_ShowFrame(&sharplcd);
+
+		SHARPLCD_AddTextToBuffer(&sharplcd, "TEXT        ", 8, 1);
+		SHARPLCD_ShowFrame(&sharplcd);
+
+		SHARPLCD_AddTextToBuffer(&sharplcd, "TEXT        ", 16, 5);
+		SHARPLCD_ShowFrame(&sharplcd);
+
+		SHARPLCD_AddTextToBuffer(&sharplcd, "TEXT", 31, 0);
+		SHARPLCD_ShowFrame(&sharplcd);
+
+		SHARPLCD_AddTextToBuffer(&sharplcd, "TEXT", 40, 1);
+		SHARPLCD_ShowFrame(&sharplcd);
+
+		SHARPLCD_AddTextToBuffer(&sharplcd, "TEXT", 50, 5);
 		SHARPLCD_ShowFrame(&sharplcd);
 	}
 }

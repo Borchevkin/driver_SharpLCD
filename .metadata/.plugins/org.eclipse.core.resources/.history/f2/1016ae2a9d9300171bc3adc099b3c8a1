@@ -109,10 +109,7 @@ int main(void)
 		SHARPLCD_AddTextToBuffer(&sharplcd, text_buffer, 0, 5);
 
 		// ============ BATTERY
-		if ((hr_curr_2 % 2) == 0)
 		SHARPLCD_AddArrayToBuffer(&sharplcd, battery_0, 96, 8, 0, 1);
-		else
-		SHARPLCD_AddArrayToBuffer(&sharplcd, battery_100, 96, 8, 0, 1);
 		SHARPLCD_AddArrayToBuffer(&sharplcd, heart, 96, 96, 0, 1);
 		// ====================
 
@@ -136,15 +133,15 @@ int main(void)
 		heartRate[2] = ' ';
 		heartRate[3] = ' ';
 		heartRate[4] = ' ';
-		heartRate[5] = hr_curr_1 + '0';
-		heartRate[6] = hr_curr_2 + '0';
+		heartRate[5] = ' ';
+		heartRate[6] = ' ';
 		heartRate[7] = ' ';
-		heartRate[8] = ' ';
-		heartRate[9] = ' ';
-		heartRate[10] =  ' ';
+		heartRate[8] = '/';
+		heartRate[9] = hr_curr_1 + '0';
+		heartRate[10] =  hr_curr_2 + '0';
 		heartRate[11] = 0;
 
-		SHARPLCD_AddTextToBuffer(&sharplcd, heartRate, 40, 1);
+		SHARPLCD_AddTextToBuffer(&sharplcd, heartRate, 0, 0);
 
 		hr_curr_2++;
 
