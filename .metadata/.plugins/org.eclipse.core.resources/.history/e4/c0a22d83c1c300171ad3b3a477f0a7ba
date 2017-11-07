@@ -37,8 +37,7 @@
 
 /* ==========TYPES========== */
 
-typedef struct
-{
+typedef struct {
 	/* Parametric values */
 	uint16_t xRes;
 	uint16_t yRes;

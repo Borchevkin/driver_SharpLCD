@@ -148,10 +148,7 @@ void SHARPLCD_WriteLine(sharplcd_t *sharplcd, uint8_t x1, uint8_t x2, uint8_t y)
 
 void SHARPLCD_WriteBuffer(sharplcd_t *sharplcd, uint8_t lineNo)
 {
-	if (lineNo > sharplcd->yRes)
-	{
-		return;
-	}
+	if (lineNo > sharplcd->yRes) return;
 
 	uint8_t buffer[1];
 
@@ -199,10 +196,7 @@ void SHARPLCD_Bitmap(sharplcd_t *sharplcd, const unsigned char* bitmap, uint8_t 
 	//1. Set MSB byte order for command
 	sharplcd->SetMSBFirst();
 
-	if (!bitmap)
-	{
-		return;
-	}
+	if (!bitmap) return;
 
 	uint16_t b;
 	uint16_t i = 0;
