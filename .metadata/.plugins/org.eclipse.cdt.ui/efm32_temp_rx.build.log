@@ -1,0 +1,6 @@
+15:15:57 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project efm32_temp_rx ****
+make -j4 all 
+make: Nothing to be done for `all'.
+
+15:15:57 Build Finished (took 952ms)
+

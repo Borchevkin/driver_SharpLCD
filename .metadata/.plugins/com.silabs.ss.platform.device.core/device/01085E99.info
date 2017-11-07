@@ -1,0 +1,4 @@
+protectFromDetectionUpdates=false
+label=CP2104 USB to UART Bridge Controller (ID:0) (01085E99)
+boardOverrides {
+}

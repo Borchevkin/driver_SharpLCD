@@ -1,0 +1,37 @@
+15:09:04 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project STK3700_LUFA_VCP ****
+make -j4 all 
+Building file: C:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP/VirtualSerial.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DBOARD_STK3700=57' '-DBOARD=BOARD_STK3700' '-DEFM32GG990F1024=1' '-DDEBUG=1' -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/LUFA/Drivers/USB/Core -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/LUFA/Drivers/USB/Core/EFM32GG/Template -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/LUFA/Drivers/USB/Core/EFM32GG -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP/Config -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/LUFA/Common -IC:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/LUFA/Drivers/USB -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/middleware/glib/dmd/ssd2119" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/middleware/usb_gecko/inc" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/VirtualSerial.d" -MT"src/VirtualSerial.o" -o "src/VirtualSerial.o" "C:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP/VirtualSerial.c"
+In file included from c:\siliconlabs\simplicitystudio\v4\offline\efm32\appnote\an0861_efm32_lufa_usb_cdc\src\lufa\common\common.h:153:0,
+                 from C:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/LUFA/Drivers/USB/USB.h:382,
+                 from C:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP/Descriptors.h:40,
+                 from C:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP/VirtualSerial.h:42,
+                 from C:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP/VirtualSerial.c:37:
+c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.1\platform\emlib\inc\em_int.h:49:2: warning: #warning "The INT module is deprecated and marked for removal in a later release. Please use the new CORE module instead. See \"Porting from em_int\" in the CORE documentation for instructions." [-Wcpp]
+ #warning "The INT module is deprecated and marked for removal in a later release. Please use the new CORE module instead. See \"Porting from em_int\" in the CORE documentation for instructions."
+  ^
+Finished building: C:/SiliconLabs/SimplicityStudio/v4/offline/efm32/appnote/an0861_efm32_lufa_usb_cdc/src/Demos/Device/LowLevel/EFM32Demos/VCP/VirtualSerial.c
+ 
+Building target: STK3700_LUFA_VCP.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "STK3700_LUFA_VCP.ld" -Xlinker --gc-sections -Xlinker -Map="STK3700_LUFA_VCP.map" --specs=nano.specs -o STK3700_LUFA_VCP.axf "./CMSIS/EFM32GG/startup_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_ebi.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_int.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/Descriptors.o" "./src/DeviceStandardReq.o" "./src/Device_EFM32GG.o" "./src/EndpointStream_EFM32GG.o" "./src/Endpoint_EFM32GG.o" "./src/Template_Endpoint_Control_R.o" "./src/Template_Endpoint_Control_W.o" "./src/Template_Endpoint_RW.o" "./src/USBController_EFM32GG.o" "./src/USBInterrupt_EFM32GG.o" "./src/USBTask.o" "./src/VirtualSerial.o" "./src/retarget.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: STK3700_LUFA_VCP.axf
+ 
+Building hex file: STK3700_LUFA_VCP.hex
+arm-none-eabi-objcopy -O ihex "STK3700_LUFA_VCP.axf" "STK3700_LUFA_VCP.hex"
+ 
+Building bin file: STK3700_LUFA_VCP.bin
+arm-none-eabi-objcopy -O binary "STK3700_LUFA_VCP.axf" "STK3700_LUFA_VCP.bin"
+ 
+Building s37 file: STK3700_LUFA_VCP.s37
+arm-none-eabi-objcopy -O srec "STK3700_LUFA_VCP.axf" "STK3700_LUFA_VCP.s37"
+ 
+Running size tool
+arm-none-eabi-size "STK3700_LUFA_VCP.axf"
+   text	   data	    bss	    dec	    hex	filename
+  20016	    164	    836	  21016	   5218	STK3700_LUFA_VCP.axf
+ 
+
+15:09:10 Build Finished (took 6s.407ms)
+

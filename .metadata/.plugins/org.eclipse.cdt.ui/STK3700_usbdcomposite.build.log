@@ -1,0 +1,29 @@
+15:20:51 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project STK3700_usbdcomposite ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG_EFM_USER=1' '-DEFM32GG990F1024=1' '-DDEBUG=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/middleware/usb_gecko/src" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//app/mcu_example/EFM32GG_STK3700/usbdcomposite" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/middleware/usb_gecko/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/EFM32GG_STK3700/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32GG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: STK3700_usbdcomposite.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "STK3700_usbdcomposite.ld" -Xlinker --gc-sections -Xlinker -Map="STK3700_usbdcomposite.map" --specs=nano.specs -o STK3700_usbdcomposite.axf "./BSP/bsp_bcc.o" "./BSP/bsp_stk.o" "./BSP/bsp_stk_leds.o" "./BSP/bsp_trace.o" "./CMSIS/EFM32GG/startup_efm32gg.o" "./CMSIS/EFM32GG/system_efm32gg.o" "./Drivers/cdc.o" "./Drivers/dmactrl.o" "./Drivers/msdd.o" "./Drivers/segmentlcd.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_dma.o" "./emlib/em_ebi.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_lcd.o" "./emlib/em_msc.o" "./emlib/em_system.o" "./emlib/em_timer.o" "./emlib/em_usart.o" "./emusb/em_usbd.o" "./emusb/em_usbdch9.o" "./emusb/em_usbdep.o" "./emusb/em_usbdint.o" "./emusb/em_usbhal.o" "./emusb/em_usbtimer.o" "./src/descriptors.o" "./src/main.o" "./src/msddmedia.o" "./src/vud.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: STK3700_usbdcomposite.axf
+ 
+Building hex file: STK3700_usbdcomposite.hex
+arm-none-eabi-objcopy -O ihex "STK3700_usbdcomposite.axf" "STK3700_usbdcomposite.hex"
+ 
+Building bin file: STK3700_usbdcomposite.bin
+arm-none-eabi-objcopy -O binary "STK3700_usbdcomposite.axf" "STK3700_usbdcomposite.bin"
+ 
+Building s37 file: STK3700_usbdcomposite.s37
+arm-none-eabi-objcopy -O srec "STK3700_usbdcomposite.axf" "STK3700_usbdcomposite.s37"
+ 
+Running size tool
+arm-none-eabi-size "STK3700_usbdcomposite.axf"
+   text	   data	    bss	    dec	    hex	filename
+  41708	      0	   9992	  51700	   c9f4	STK3700_usbdcomposite.axf
+ 
+
+15:20:54 Build Finished (took 2s.967ms)
+

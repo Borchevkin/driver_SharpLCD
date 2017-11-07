@@ -1,4 +1,10 @@
 protectFromDetectionUpdates=false
 label=J-Link Silicon Labs (440035009)
+targetPartOverride=mcu.arm.efm32.g.efm32g210f128
 boardOverrides {
+}
+EXTENSION:com.silabs.ss.support.mcu.internal.api.part.core.MCUDeviceSettingExtension {
+  tifId:swd
+}
+EXTENSION:com.silabs.ss.support.jlink.internal.api.core.JLinkDeviceSettingsExtension {
 }

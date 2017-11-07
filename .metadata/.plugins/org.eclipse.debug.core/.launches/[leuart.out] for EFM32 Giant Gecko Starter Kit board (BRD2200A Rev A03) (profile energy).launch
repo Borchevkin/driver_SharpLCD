@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.silabs.ss.tool.energyprofiler.si32.launch">
+<booleanAttribute key="com.silabs.ide.si32.debug.EAPROFILER_CODE_CORRELATION" value="true"/>
+<stringAttribute key="com.silabs.ss.framework.debugger.core.BOARDS" value="brd2200a:0.0.0.A03"/>
+<stringAttribute key="com.silabs.ss.framework.debugger.core.DEFAULT_ADAPTER" value=""/>
+<stringAttribute key="com.silabs.ss.framework.debugger.core.ERASE_METHOD" value="page"/>
+<stringAttribute key="com.silabs.ss.framework.debugger.core.MCU" value="mcu.arm.efm32.gg.efm32gg990f1024"/>
+<booleanAttribute key="com.silabs.ss.framework.debugger.core.RUN_FROM_RESET" value="true"/>
+<booleanAttribute key="com.silabs.ss.framework.debugger.core.SMART_DOWNLOAD" value="false"/>
+<stringAttribute key="com.silabs.ss.tool.ide.arm.debug.SDK_ID" value="com.silabs.sdk.stack.super:1.1.1._310456152"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.1\app\mcu_example\EFM32GG_STK3700\leuart\bin\leuart.out"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value=""/>
+<stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;reserved-for-future-use&quot;/&gt;&#13;&#10;"/>
+</launchConfiguration>

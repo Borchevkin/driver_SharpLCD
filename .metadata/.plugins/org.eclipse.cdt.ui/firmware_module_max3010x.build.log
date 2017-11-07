@@ -1,0 +1,54 @@
+19:11:16 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project firmware_module_max3010x ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -std=c99 '-DDEBUG=1' '-DEFM32G210F128=1' -I"C:\LocalProject\firmware_module_max3010x\inc" -I"C:/LocalProject/firmware_module_max3010x/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//platform/Device/SiliconLabs/EFM32G/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1//hardware/kit/common/drivers" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:4:0:
+c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v1.1\platform\emlib\inc\em_int.h:49:2: warning: #warning "The INT module is deprecated and marked for removal in a later release. Please use the new CORE module instead. See \"Porting from em_int\" in the CORE documentation for instructions." [-Wcpp]
+ #warning "The INT module is deprecated and marked for removal in a later release. Please use the new CORE module instead. See \"Porting from em_int\" in the CORE documentation for instructions."
+  ^
+../src/main.c: In function 'BMA280_Init':
+../src/main.c:100:20: warning: assignment from incompatible pointer type
+  bma280.delay_msec = DelayMs;
+                    ^
+../src/main.c: In function 'RequestRawHandler':
+../src/main.c:256:28: warning: passing argument 1 of 'NDK_CalcCheckSumForPacket' discards 'volatile' qualifier from pointer target type
+  NDK_CalcCheckSumForPacket(answerPacket, NDK_SENSOR_PPG_ANSWER_RAW_LEN);
+                            ^
+In file included from ../src/main.c:7:0:
+C:\LocalProject\firmware_module_max3010x\inc/balalaika_ndk.h:60:6: note: expected 'uint8_t *' but argument is of type 'volatile uint8_t *'
+ void NDK_CalcCheckSumForPacket(uint8_t * packet, uint8_t len);
+      ^
+../src/main.c:258:19: warning: passing argument 1 of 'RS485_SendPacket' discards 'volatile' qualifier from pointer target type
+  RS485_SendPacket(answerPacket, NDK_SENSOR_PPG_ANSWER_RAW_LEN);
+                   ^
+../src/main.c:122:6: note: expected 'uint8_t *' but argument is of type 'volatile uint8_t *'
+ void RS485_SendPacket(uint8_t *packet, uint8_t len)
+      ^
+../src/main.c:217:9: warning: unused variable 'result' [-Wunused-variable]
+  int8_t result = OK;
+         ^
+Finished building: ../src/main.c
+ 
+Building target: firmware_module_max3010x.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m3 -mthumb -T "firmware_module_max3010x.ld" -Xlinker --gc-sections -Xlinker -Map="firmware_module_max3010x.map" --specs=nano.specs -o firmware_module_max3010x.axf "./CMSIS/EFM32G/startup_gcc_efm32g.o" "./CMSIS/EFM32G/system_efm32g.o" "./emlib/em_acmp.o" "./emlib/em_adc.o" "./emlib/em_aes.o" "./emlib/em_assert.o" "./emlib/em_burtc.o" "./emlib/em_cmu.o" "./emlib/em_cryotimer.o" "./emlib/em_crypto.o" "./emlib/em_dac.o" "./emlib/em_dbg.o" "./emlib/em_dma.o" "./emlib/em_ebi.o" "./emlib/em_emu.o" "./emlib/em_gpcrc.o" "./emlib/em_gpio.o" "./emlib/em_i2c.o" "./emlib/em_idac.o" "./emlib/em_int.o" "./emlib/em_lcd.o" "./emlib/em_ldma.o" "./emlib/em_lesense.o" "./emlib/em_letimer.o" "./emlib/em_leuart.o" "./emlib/em_mpu.o" "./emlib/em_msc.o" "./emlib/em_opamp.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rmu.o" "./emlib/em_rtc.o" "./emlib/em_rtcc.o" "./emlib/em_system.o" "./emlib/em_timer.o" "./emlib/em_usart.o" "./emlib/em_vcmp.o" "./emlib/em_wdog.o" "./src/InitDevice.o" "./src/balalaika_ndk.o" "./src/bma2x2.o" "./src/bsp.o" "./src/main.o" "./src/max30102.o" "./src/tests.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: firmware_module_max3010x.axf
+ 
+Building hex file: firmware_module_max3010x.hex
+arm-none-eabi-objcopy -O ihex "firmware_module_max3010x.axf" "firmware_module_max3010x.hex"
+ 
+Building bin file: firmware_module_max3010x.bin
+arm-none-eabi-objcopy -O binary "firmware_module_max3010x.axf" "firmware_module_max3010x.bin"
+ 
+Building s37 file: firmware_module_max3010x.s37
+arm-none-eabi-objcopy -O srec "firmware_module_max3010x.axf" "firmware_module_max3010x.s37"
+ 
+Running size tool
+arm-none-eabi-size "firmware_module_max3010x.axf"
+   text	   data	    bss	    dec	    hex	filename
+  13508	    120	    160	  13788	   35dc	firmware_module_max3010x.axf
+ 
+
+19:11:19 Build Finished (took 3s.762ms)
+

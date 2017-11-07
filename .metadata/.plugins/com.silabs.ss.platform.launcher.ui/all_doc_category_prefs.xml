@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_92" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>com.silabs.sdk.stack.super:1.1.1._310456152</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>API References</string>
+      </void>
+      <void property="sdkCategory">
+       <boolean>true</boolean>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Application Notes</string>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Data Sheets</string>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Errata</string>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Getting Started</string>
+      </void>
+      <void property="sdkCategory">
+       <boolean>true</boolean>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Migration Guides</string>
+      </void>
+      <void property="sdkCategory">
+       <boolean>true</boolean>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Reference Manuals</string>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Schematic and Layout Files</string>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>Uncategorized Documents</string>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.docs.CategoryPref">
+      <void property="categoryName">
+       <string>User&apos;s Guides</string>
+      </void>
+      <void property="showCategory">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

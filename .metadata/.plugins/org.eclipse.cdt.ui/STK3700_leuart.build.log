@@ -1,0 +1,6 @@
+14:36:14 **** Incremental Build of configuration GNU ARM v4.9.3 - Debug for project STK3700_leuart ****
+make -j4 all 
+make: Nothing to be done for `all'.
+
+14:36:15 Build Finished (took 1s.49ms)
+

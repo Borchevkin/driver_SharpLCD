@@ -83,6 +83,7 @@ int main(void)
 			sec_2 = 0;
 			sec_1++;
 		}
+
 		if (sec_1 == 6 && sec_2 == 0)
 		{
 			sec_1 = 0;
@@ -110,9 +111,13 @@ int main(void)
 
 		// ============ BATTERY
 		if ((hr_curr_2 % 2) == 0)
-		SHARPLCD_AddArrayToBuffer(&sharplcd, battery_0, 96, 8, 0, 1);
+		{
+			SHARPLCD_AddArrayToBuffer(&sharplcd, battery_0, 96, 8, 0, 1);
+		}
 		else
-		SHARPLCD_AddArrayToBuffer(&sharplcd, battery_100, 96, 8, 0, 1);
+		{
+			SHARPLCD_AddArrayToBuffer(&sharplcd, battery_100, 96, 8, 0, 1);
+		}
 		SHARPLCD_AddArrayToBuffer(&sharplcd, heart, 96, 96, 0, 1);
 		// ====================
 
@@ -148,13 +153,7 @@ int main(void)
 
 		hr_curr_2++;
 
-
 		Delay(500);
 		SHARPLCD_ShowFrame(&sharplcd);
 	}
 }
-
-
-// ============================ TEST FIELD
-
-// =======================================

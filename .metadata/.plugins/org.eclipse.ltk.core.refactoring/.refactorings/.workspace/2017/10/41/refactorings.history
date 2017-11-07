@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;efm32_temp_rx&apos;" deleteContents="true" description="Delete resource &apos;efm32_temp_rx&apos;" element1="/efm32_temp_rx" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1507036600870"/>
+</session>
