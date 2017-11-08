@@ -18,7 +18,7 @@ See ***LICENCE*** file.
 
 * ***/efm32gg_demo/*** - driver for Sharp LCD display:
 
-    * ***../Inc/font.h*** - header of the Sharp LCD display driver
+    * ***../Inc/font.h*** - header with font for the Sharp LCD display driver
 
     * ***../Inc/sharpLCD.h*** - header of the Sharp LCD display driver
 
